@@ -1,2268 +1,628 @@
 <!DOCTYPE html>
-  <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advise Desk | Corporate Compliance, Retainership ₹1,499/mo, Accounting ₹999/mo & 15-Min DSC</title>
-    <meta name="description" content="Advise Desk Mumbai - Company Compliance Retainership at ₹1,499/mo, Accounting from ₹999/mo, GST Filing from ₹499/mo, 15-Minute Class 3 DSC (₹1,599/2yrs), XBRL Filings, and Real-Time Statutory Compliance Calendar.">
-
-    <!-- Google Fonts: Inter, Outfit, Newsreader -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                50: '#f0f5ff',
-                100: '#e0ecff',
-                200: '#c7dcfe',
-                500: '#2563eb',
-                600: '#1d4ed8',
-                800: '#0f275e',
-                900: '#0b193f',
-                950: '#060e24',
-                gold: '#d97706',
-                goldLight: '#fbbf24',
-                emerald: '#059669',
-                emeraldLight: '#10b981',
-              }
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Outfit', 'sans-serif'],
-              serif: ['Newsreader', 'Georgia', 'serif'],
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advise Desk — Corporate, Tax, Legal & DSC Services in Mumbai</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              900: '#0B132B',
+              800: '#1C2541',
+              700: '#3A506B',
+              500: '#48CAE4',
+              gold: '#D4AF37',
+              accent: '#00B4D8'
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif']
           }
         }
       }
-    </script>
+    }
+  </script>
 
-    <style>
-      .hero-glow {
-        background: radial-gradient(circle at 50% 10%, rgba(37, 99, 235, 0.12) 0%, rgba(217, 119, 6, 0.06) 36%, rgba(248, 250, 252, 0) 70%);
-      }
-      .badge-pulse {
-        animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-      }
-      @keyframes pulse-dot {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.4; transform: scale(1.15); }
-      }
-      .service-card {
-        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .service-card:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 16px 30px -10px rgba(15, 39, 94, 0.12);
-      }
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #070B19;
+      color: #F8FAFC;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+    }
+    .glass-card {
+      background: rgba(28, 37, 65, 0.7);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(212, 175, 55, 0.6);
+      box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+    }
+    .perspective-container {
+      perspective: 1200px;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B132B;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A506B;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="bg-[#070B19] text-slate-100 min-h-screen flex flex-col selection:bg-amber-500 selection:text-black">
 
-      /* Hide scrollbar for direct tabs on mobile */
-      .no-scrollbar::-webkit-scrollbar {
-        display: none;
-      }
-      .no-scrollbar {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
+  <!-- MCA Extension Announcement Bar -->
+  <div class="bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 text-slate-950 px-4 py-2 text-xs md:text-sm font-bold text-center flex items-center justify-center gap-2 shadow-md">
+    <i class="fa-solid fa-bullhorn animate-bounce"></i>
+    <span>MCA Update: AOC-4 extended to 31 Dec 2026 & MGT-7/7A to 31 Jan 2027 (General Circular No. 05/2026).</span>
+    <button onclick="openCalendarModal()" class="underline ml-2 hover:text-white cursor-pointer font-extrabold">Check Due Dates →</button>
+  </div>
 
-      /* Active tab styling */
-      .nav-tab-item {
-        transition: all 0.2s ease-in-out;
-        white-space: nowrap;
-      }
-      .nav-tab-item:hover {
-        background-color: #f1f5f9;
-        color: #1d4ed8;
-      }
-
-      /* Compliance Table Pills matching vazassociates.in */
-      .pill-income-tax {
-        border: 1.2px solid #93c5fd;
-        color: #2563eb;
-        background-color: #eff6ff;
-      }
-      .pill-gst {
-        border: 1.2px solid #86efac;
-        color: #15803d;
-        background-color: #f0fdf4;
-      }
-      .pill-companies-act {
-        border: 1.2px solid #d8b4fe;
-        color: #7e22ce;
-        background-color: #faf5ff;
-      }
-      .pill-llp-act {
-        border: 1.2px solid #e9d5ff;
-        color: #9333ea;
-        background-color: #fcfaff;
-      }
-      .pill-epf-esi {
-        border: 1.2px solid #fed7aa;
-        color: #c2410c;
-        background-color: #fff7ed;
-      }
-      .pill-pt-mah {
-        border: 1.2px solid #fecdd3;
-        color: #be123c;
-        background-color: #fff1f2;
-      }
-
-      /* Print styles for compliance calendar */
-      @media print {
-        body * {
-          visibility: hidden;
-        }
-        #calendar, #calendar * {
-          visibility: visible;
-        }
-        #calendar {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          background: white !important;
-        }
-        .no-print {
-          display: none !important;
-        }
-      }
-    </style>
-  </head>
-  <body class="bg-[#fcfdfd] text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
-
-    <!-- 1. Real-Time Statutory Extension Alert Ribbon -->
-    <div class="bg-gradient-to-r from-brand-950 via-slate-900 to-brand-950 text-slate-200 text-xs py-2 px-4 border-b border-brand-800">
-      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2.5">
-        <div class="flex items-center gap-2 flex-1 min-w-[280px]">
-          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-500/20 text-brand-goldLight border border-amber-500/30 whitespace-nowrap">
-            <span class="w-1.5 h-1.5 rounded-full bg-brand-goldLight mr-1.5 badge-pulse"></span> MCA NOTIFICATION
-          </span>
-          <span class="text-xs font-semibold text-slate-200 truncate">
-            <strong>MCA Circular 05/2026:</strong> Form AOC-4 extended to <strong>31 Dec 2026</strong> &bull; MGT-7/7A to <strong>31 Jan 2027</strong> without late fees.
-          </span>
+  <!-- Top Navigation & Direct Tabs -->
+  <header class="sticky top-0 z-50 bg-[#0B132B]/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 border border-amber-500/40 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform p-2">
+          <!-- Official AD Monogram SVG -->
+          <svg viewBox="0 0 100 100" class="w-full h-full fill-amber-400">
+            <path d="M25 20 L70 20 C85 20 92 32 85 45 C78 58 65 65 50 65 L40 65 L40 85 L25 85 Z M40 32 L40 53 L52 53 C62 53 70 48 74 42 C78 36 74 32 65 32 Z"/>
+            <polygon points="25,20 42,55 10,55" class="fill-amber-300 opacity-90"/>
+          </svg>
         </div>
-
-        <div class="flex items-center space-x-3 text-xs font-semibold shrink-0">
-          <a href="https://www.instagram.com/advisedeskindia/" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition flex items-center gap-1.5 text-slate-300">
-            <i data-lucide="instagram" class="w-3.5 h-3.5 text-pink-400"></i>
-            <span class="hidden sm:inline">@advisedeskindia</span>
-          </a>
-          <span class="text-slate-600 hidden sm:inline">|</span>
-          <a href="mailto:advisedesk23@gmail.com" class="hover:text-brand-goldLight transition flex items-center gap-1.5 text-slate-300">
-            <i data-lucide="mail" class="w-3.5 h-3.5 text-brand-goldLight"></i>
-            <span class="hidden md:inline">advisedesk23@gmail.com</span>
-          </a>
-          <span class="text-slate-600">|</span>
-          <a href="tel:+918767930751" class="hover:text-brand-goldLight transition flex items-center gap-1 text-slate-200 font-bold">
-            <i data-lucide="phone-call" class="w-3.5 h-3.5 text-brand-goldLight"></i>
-            <span>+91 87679 30751</span>
-          </a>
+        <div>
+          <span class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-amber-400 bg-clip-text text-transparent">Advise Desk</span>
+          <p class="text-[10px] tracking-widest text-amber-400/90 font-medium uppercase">Expert Advice, Anytime!</p>
         </div>
+      </a>
+
+      <!-- Direct Access Horizontal Tabs -->
+      <nav class="hidden xl:flex items-center gap-1 bg-slate-900/80 p-1.5 rounded-xl border border-slate-800 text-xs font-medium">
+        <a href="#roc" class="px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-amber-400 transition-colors">ROC Secretarial</a>
+        <a href="#retainership" class="px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-amber-400 transition-colors flex items-center gap-1">Retainership <span class="bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded text-[10px]">₹1,499/mo</span></a>
+        <a href="#accounting" class="px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-amber-400 transition-colors flex items-center gap-1">Accounting <span class="bg-blue-500/20 text-blue-400 px-1.5 py-0.5 rounded text-[10px]">₹999/mo</span></a>
+        <a href="#gst" class="px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-amber-400 transition-colors flex items-center gap-1">GST <span class="bg-purple-500/20 text-purple-400 px-1.5 py-0.5 rounded text-[10px]">₹499/mo</span></a>
+        <a href="#ip-exim" class="px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-amber-400 transition-colors">IP & Exim</a>
+        <a href="#dsc" class="px-3 py-2 rounded-lg hover:bg-slate-800 hover:text-amber-400 transition-colors flex items-center gap-1">Class 3 DSC <span class="bg-amber-500/20 text-amber-400 px-1.5 py-0.5 rounded text-[10px]">15 Mins</span></a>
+        <button onclick="openCalendarModal()" class="px-3 py-2 rounded-lg bg-amber-500/10 text-amber-400 hover:bg-amber-500/20 transition-colors flex items-center gap-1 font-bold"><i class="fa-solid fa-calendar-days"></i> Compliance Calendar</button>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="tel:+918767930751" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-slate-700 hover:border-amber-500/50 text-slate-200 text-sm font-semibold transition-all hover:bg-slate-800">
+          <i class="fa-solid fa-phone text-amber-400"></i> +91 87679 30751
+        </a>
+        <a href="https://wa.me/918767930751?text=Hi%2C%20I%20need%20help%20with%20corporate%20compliance" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold shadow-lg shadow-emerald-900/30 transition-all transform hover:-translate-y-0.5">
+          <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+        </a>
       </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-10 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+    <div class="absolute inset-0 -z-10 flex items-center justify-center opacity-20 pointer-events-none">
+      <div class="w-[600px] h-[600px] bg-gradient-to-tr from-amber-600/30 to-blue-600/30 rounded-full blur-3xl"></div>
+    </div>
+    
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-800/90 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-6 shadow-inner">
+      <i class="fa-solid fa-shield-halved"></i> Licensed RA Agent · CA/CS Backed · Mumbai, India
     </div>
 
-    <!-- Direct-Access Sticky Navigation Header (NO Hamburger Button) -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Top Row: Logo & Quick Call/WhatsApp CTAs -->
-        <div class="h-16 flex items-center justify-between gap-3 border-b border-slate-100">
-          <!-- Brand Logo -->
-          <a href="#" class="flex items-center gap-2.5 group shrink-0">
-            <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-950 via-brand-800 to-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-950/20 group-hover:scale-105 transition-transform">
-              <i data-lucide="shield-check" class="w-5 h-5 text-brand-goldLight"></i>
-            </div>
-            <div class="flex flex-col">
-              <span class="font-display font-black text-xl tracking-tight text-brand-950 leading-none">
-                Advise<span class="text-brand-gold">Desk</span>
-              </span>
-              <span class="text-[9px] font-bold tracking-wider text-slate-500 uppercase mt-0.5">Corporate &bull; Tax &bull; Legal &bull; DSC</span>
-            </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+      Full-Spectrum <span class="bg-gradient-to-r from-amber-400 via-yellow-200 to-amber-500 bg-clip-text text-transparent">Corporate Compliance</span> & Legal Solutions
+    </h1>
+    
+    <p class="max-w-3xl mx-auto text-slate-300 text-base sm:text-lg mb-8">
+      Trusted by <strong class="text-amber-400">8,000+</strong> businesses in Mumbai and across India. From Class 3 DSC in 15 minutes to comprehensive ROC secretarial retainerships and audit-ready accounting.
+    </p>
+
+    <!-- Quick Stat Badges -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-10">
+      <div class="glass-card p-4 rounded-xl text-center">
+        <div class="text-2xl font-black text-amber-400">8,000+</div>
+        <div class="text-xs text-slate-400">Corporate & DSC Clients</div>
+      </div>
+      <div class="glass-card p-4 rounded-xl text-center">
+        <div class="text-2xl font-black text-blue-400">15 Mins</div>
+        <div class="text-xs text-slate-400">Express DSC Record</div>
+      </div>
+      <div class="glass-card p-4 rounded-xl text-center">
+        <div class="text-2xl font-black text-emerald-400">₹1,499/mo</div>
+        <div class="text-xs text-slate-400">Compliance Retainership</div>
+      </div>
+      <div class="glass-card p-4 rounded-xl text-center">
+        <div class="text-2xl font-black text-purple-400">7+ Years</div>
+        <div class="text-xs text-slate-400">Mumbai Advisory Track</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Short-Form Service Matrix -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 perspective-container space-y-16">
+    
+    <!-- 1. ROC & Corporate Secretarial -->
+    <section id="roc" class="glass-card rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none text-9xl font-black text-amber-400">ROC</div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Pillar 01</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">ROC & Corporate Secretarial Services</h2>
+        </div>
+        <a href="https://wa.me/918767930751?text=I%20need%20ROC%20Secretarial%20help" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm shadow-lg shadow-amber-500/20 transition-all">
+          Enquire ROC <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3 font-bold text-lg">🏢</div>
+          <h3 class="font-bold text-white mb-2">Incorporations & Formations</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">Private Limited (₹6,999), LLP (₹4,999), OPC, Section 8 Trust, and startup SPICe+ setups.</p>
+        </div>
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-blue-500/10 text-blue-400 flex items-center justify-center mb-3 font-bold text-lg">📑</div>
+          <h3 class="font-bold text-white mb-2">Annual Filings & XBRL</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">AOC-4 financial statements, MGT-7/7A annual returns, XBRL C&I tagging, and INC-20A commencement.</p>
+        </div>
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3 font-bold text-lg">✍️</div>
+          <h3 class="font-bold text-white mb-2">Director KYC & Changes</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">DIR-3 KYC Web & e-Form, DIR-11/12 resignations and appointments, share transfers, and DPT-3 filings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Company Compliance Retainership Plan -->
+    <section id="retainership" class="glass-card rounded-3xl p-6 sm:p-10 relative overflow-hidden border-emerald-500/40">
+      <div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none text-9xl font-black text-emerald-400">PLAN</div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Pillar 02</span>
+            <span class="bg-emerald-500 text-slate-950 font-black px-3 py-0.5 rounded-full text-xs">Most Popular</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Company Compliance Retainership Plan</h2>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-right">
+            <div class="text-xs text-slate-400">Starting at</div>
+            <div class="text-2xl font-black text-emerald-400">₹1,499 <span class="text-xs text-slate-300 font-normal">/ month</span></div>
+          </div>
+          <a href="https://wa.me/918767930751?text=I%20want%20to%20subscribe%20to%20the%20Compliance%20Retainership%20Plan%20at%201499%20pm" target="_blank" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-900/30 transition-all">
+            Subscribe Now <i class="fa-solid fa-arrow-right"></i>
           </a>
-
-          <!-- Right Direct Desk Triggers -->
-          <div class="flex items-center gap-2 shrink-0">
-            <a href="https://www.instagram.com/advisedeskindia/" target="_blank" rel="noopener noreferrer" class="hidden md:flex p-2 rounded-lg border border-slate-200 text-slate-600 hover:text-pink-600 hover:bg-slate-50 transition" title="Follow Advise Desk on Instagram">
-              <i data-lucide="instagram" class="w-4 h-4"></i>
-            </a>
-            <a href="tel:+918767930751" class="px-3 py-1.5 rounded-lg border border-slate-300 text-slate-700 font-bold text-xs hover:bg-slate-100 transition flex items-center gap-1.5 shadow-sm">
-              <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-600"></i>
-              <span class="hidden sm:inline">Call Desk</span>
-            </a>
-            <a href="https://wa.me/918767930751?text=Hello%20AdviseDesk,%20I%20am%20looking%20for%20Corporate%20Compliance,%20Accounting%20and%20DSC%20services." 
-              target="_blank" 
-              class="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-md shadow-emerald-600/20 transition flex items-center gap-1.5">
-              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
-              <span>WhatsApp Chat</span>
-            </a>
-          </div>
         </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-slate-300">
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+          <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+          <div><strong class="text-white block mb-0.5">Annual ROC Filings</strong> AOC-4 & MGT-7/7A covered end-to-end.</div>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+          <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+          <div><strong class="text-white block mb-0.5">Director KYC</strong> DIR-3 KYC compliance for all directors.</div>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+          <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+          <div><strong class="text-white block mb-0.5">Statutory Registers</strong> Maintenance of MGT-1, MBP-1 & minutes.</div>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+          <i class="fa-solid fa-circle-check text-emerald-400 mt-0.5"></i>
+          <div><strong class="text-white block mb-0.5">Priority Advisory</strong> Unlimited CA/CS consultations on WhatsApp.</div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Bottom Row: Direct Horizontal Clickable Tabs (Always Visible on Mobile & Desktop) -->
-        <nav class="flex items-center space-x-1.5 sm:space-x-2 py-2 overflow-x-auto no-scrollbar scroll-smooth">
-          <a href="#roc" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 hover:text-brand-600 flex items-center gap-1.5">
-            <i data-lucide="building-2" class="w-3.5 h-3.5 text-slate-400"></i>
-            <span>ROC Secretarial</span>
+    <!-- 3. Accounting & Bookkeeping Services -->
+    <section id="accounting" class="glass-card rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="text-blue-400 text-xs font-bold uppercase tracking-wider">Pillar 03</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Accounting & Bookkeeping Services</h2>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-right">
+            <div class="text-xs text-slate-400">Starting at</div>
+            <div class="text-2xl font-black text-blue-400">₹999 <span class="text-xs text-slate-300 font-normal">/ month</span></div>
+          </div>
+          <a href="https://wa.me/918767930751?text=I%20need%20Accounting%20and%20Bookkeeping%20starting%20at%20999%20pm" target="_blank" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm shadow-lg shadow-blue-900/30 transition-all">
+            Get Started <i class="fa-solid fa-arrow-right"></i>
           </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="font-bold text-white text-sm mb-2 flex items-center gap-2"><i class="fa-solid fa-book text-blue-400"></i> Ledger & Entry Maintenance</div>
+          <p>Tally, Zoho & QuickBooks journal entries, ledger reconciliation, and day-to-day accounts payable/receivable.</p>
+        </div>
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="font-bold text-white text-sm mb-2 flex items-center gap-2"><i class="fa-solid fa-chart-pie text-blue-400"></i> Monthly MIS & Bank Rec</div>
+          <p>Bank statement reconciliation, cash flow statements, and monthly profit & loss preview reports.</p>
+        </div>
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="font-bold text-white text-sm mb-2 flex items-center gap-2"><i class="fa-solid fa-file-invoice-dollar text-blue-400"></i> Audit-Ready Financials</div>
+          <p>Balance sheet preparation and schedules tailored for seamless tax audits and statutory filings.</p>
+        </div>
+      </div>
+    </section>
 
-          <a href="#retainership" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 hover:text-brand-600 flex items-center gap-1.5 bg-emerald-50/60 border border-emerald-100">
-            <i data-lucide="shield" class="w-3.5 h-3.5 text-emerald-600"></i>
-            <span>Retainership</span>
-            <span class="text-[9px] uppercase px-1.5 py-0.2 rounded bg-emerald-100 text-emerald-800 font-extrabold">₹1,499/mo</span>
+    <!-- 4. GST Return Filing Services -->
+    <section id="gst" class="glass-card rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="text-purple-400 text-xs font-bold uppercase tracking-wider">Pillar 04</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">GST Return Filing Services</h2>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-right">
+            <div class="text-xs text-slate-400">Starting at</div>
+            <div class="text-2xl font-black text-purple-400">₹499 <span class="text-xs text-slate-300 font-normal">/ month</span></div>
+          </div>
+          <a href="https://wa.me/918767930751?text=I%20need%20GST%20return%20filing%20starting%20at%20499%20pm" target="_blank" class="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-sm shadow-lg shadow-purple-900/30 transition-all">
+            File GST <i class="fa-solid fa-arrow-right"></i>
           </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-slate-300">
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="font-bold text-white text-sm mb-2">GSTR-1 & GSTR-3B</div>
+          <p>Monthly & quarterly outward supply reporting and tax payment challan generation without delays.</p>
+        </div>
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="font-bold text-white text-sm mb-2">GSTR-2B ITC Reconciliation</div>
+          <p>Strict input tax credit matching to claim maximum eligible credits and avoid mismatch notices.</p>
+        </div>
+        <div class="bg-slate-900/60 p-5 rounded-2xl border border-slate-800">
+          <div class="font-bold text-white text-sm mb-2">New GST Registration & LUT</div>
+          <p>New GSTIN applications, amendments, cancellation, and export LUT filing starting at ₹1,499.</p>
+        </div>
+      </div>
+    </section>
 
-          <a href="#accounting" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 hover:text-brand-600 flex items-center gap-1.5 bg-blue-50/60 border border-blue-100">
-            <i data-lucide="book-open" class="w-3.5 h-3.5 text-blue-600"></i>
-            <span>Accounting</span>
-            <span class="text-[9px] uppercase px-1.5 py-0.2 rounded bg-blue-100 text-blue-800 font-extrabold">₹999/mo</span>
+    <!-- 5. Trademark, MSME, ICEGATE & AD Code -->
+    <section id="ip-exim" class="glass-card rounded-3xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Pillar 05</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Trademark, MSME, ICEGATE & AD Code Registration</h2>
+        </div>
+        <a href="https://wa.me/918767930751?text=I%20need%20Trademark%20or%20EXIM%20services" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-sm border border-amber-500/30 transition-all">
+          Enquire IP & Exim <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-xs text-slate-300">
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+          <div class="font-bold text-white mb-1">™️ Trademark Registration</div>
+          <p>Brand & logo protection starting at ₹3,999 with professional examination reply drafting.</p>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+          <div class="font-bold text-white mb-1">🏭 MSME Udyam</div>
+          <p>Instant registration for priority lending and government tender eligibility at ₹499.</p>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+          <div class="font-bold text-white mb-1">🌐 Import Export Code (IEC)</div>
+          <p>DGFT portal IEC registration & updates starting at ₹999.</p>
+        </div>
+        <div class="bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+          <div class="font-bold text-white mb-1">⚓ AD Code & ICEGATE</div>
+          <p>Customs port registration for JNPT and Air Cargo export shipping clearances.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Class 3 DSC (Sign + Encrypt / Universal) -->
+    <section id="dsc" class="glass-card rounded-3xl p-6 sm:p-10 relative overflow-hidden border-amber-500/50">
+      <div class="absolute right-0 top-0 bg-amber-500 text-slate-950 font-black px-6 py-1 rounded-bl-2xl text-xs uppercase tracking-wider">15 Mins Express</div>
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
+        <div>
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Pillar 06</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Class 3 DSC (Sign + Encrypt / Universal)</h2>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="text-right">
+            <div class="text-xs text-slate-400">2 Years Validity</div>
+            <div class="text-2xl font-black text-amber-400">₹1,599 <span class="text-xs text-slate-300 font-normal">+ GST</span></div>
+          </div>
+          <a href="https://wa.me/918767930751?text=I%20need%20Class%203%20Universal%20DSC%20for%201599" target="_blank" class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-xl shadow-amber-500/20 transition-all">
+            Get DSC in 15 Mins <i class="fa-solid fa-bolt"></i>
           </a>
-
-          <a href="#gst" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 hover:text-brand-600 flex items-center gap-1.5 bg-purple-50/60 border border-purple-100">
-            <i data-lucide="percent" class="w-3.5 h-3.5 text-purple-600"></i>
-            <span>GST Filing</span>
-            <span class="text-[9px] uppercase px-1.5 py-0.2 rounded bg-purple-100 text-purple-800 font-extrabold">₹499/mo</span>
-          </a>
-
-          <a href="#ip-exim" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 hover:text-brand-600 flex items-center gap-1.5">
-            <i data-lucide="stamp" class="w-3.5 h-3.5 text-slate-400"></i>
-            <span>IP &amp; Exim</span>
-          </a>
-
-          <a href="#dsc" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-700 hover:text-brand-600 flex items-center gap-1.5 bg-amber-50/60 border border-amber-200">
-            <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-600"></i>
-            <span>Class 3 DSC</span>
-            <span class="text-[9px] uppercase px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 font-extrabold">15 Mins</span>
-          </a>
-
-          <a href="#calendar" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-bold text-slate-900 hover:text-brand-600 flex items-center gap-1.5 bg-amber-100/70 border border-amber-300">
-            <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-gold"></i>
-            <span>Compliance Calendar</span>
-            <span class="text-[9px] uppercase px-1 rounded bg-amber-300 text-amber-950 font-black">Live</span>
-          </a>
-
-          <a href="#estimator" class="nav-tab-item px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-600 hover:text-brand-600 flex items-center gap-1">
-            <i data-lucide="calculator" class="w-3.5 h-3.5 text-slate-400"></i>
-            <span>Estimator</span>
-          </a>
-        </nav>
-
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="relative pt-12 pb-16 md:py-20 overflow-hidden hero-glow">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="max-w-4xl mx-auto text-center">
-          <!-- Trust Ribbon -->
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-slate-200 text-brand-950 text-xs font-bold mb-6 shadow-sm">
-            <span class="flex h-2 w-2 rounded-full bg-emerald-500"></span>
-            <span>Mumbai Corporate Secretariat &bull; Chartered Compliance &bull; 8,000+ Clients Pan-India</span>
-          </div>
-
-          <!-- Main Heading -->
-          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-brand-950 leading-[1.12] mb-6">
-            Full-Stack Corporate Compliance. <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-brand-gold">
-              Retainership, Accounting &amp; DSC in 15 Minutes.
-            </span>
-          </h1>
-
-          <!-- Subheading -->
-          <p class="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-8 max-w-3xl mx-auto">
-            Trusted by <strong class="text-slate-900 font-bold">8,000+ corporate clients</strong> across Mumbai and India. From <strong class="text-emerald-700 font-bold">Company Retainership at ₹1,499/mo</strong> and <strong class="text-blue-700 font-bold">Accounting from ₹999/mo</strong> to <strong class="text-purple-700 font-bold">GST filing at ₹499/mo</strong> and <strong class="text-brand-gold font-bold">15-minute Class 3 DSC (₹1,599 / 2 yrs)</strong>.
-          </p>
-
-          <!-- CTA Buttons -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-10">
-            <a href="#calendar" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-brand-950 hover:bg-brand-900 text-white font-bold text-sm shadow-xl shadow-brand-950/20 transition flex items-center justify-center gap-2">
-              <i data-lucide="calendar" class="w-4 h-4 text-brand-goldLight"></i>
-              <span>View Live Compliance Calendar</span>
-            </a>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20am%20interested%20in%20the%20Corporate%20Retainership%20and%20Accounting%20plans." target="_blank" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm shadow-xl shadow-emerald-600/20 transition flex items-center justify-center gap-2">
-              <i data-lucide="message-circle" class="w-4 h-4"></i>
-              <span>Chat on WhatsApp</span>
-            </a>
-            <a href="#estimator" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white border border-slate-300 hover:border-brand-500 text-slate-800 font-bold text-sm transition flex items-center justify-center gap-2 shadow-sm">
-              <i data-lucide="calculator" class="w-4 h-4 text-brand-gold"></i>
-              <span>Instant Fee Estimator</span>
-            </a>
-          </div>
-
-          <!-- Metrics Row -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto pt-6 border-t border-slate-200">
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-sm text-center">
-              <div class="text-2xl font-black text-brand-950">8,000+</div>
-              <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide mt-0.5">Corporate &amp; DSC Clients</div>
-            </div>
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-sm text-center">
-              <div class="text-2xl font-black text-brand-gold">15 Mins</div>
-              <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide mt-0.5">DSC Issuance Record</div>
-            </div>
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-sm text-center">
-              <div class="text-2xl font-black text-emerald-700">₹1,499<span class="text-xs font-normal">/mo</span></div>
-              <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide mt-0.5">Company Retainership</div>
-            </div>
-            <div class="p-3.5 bg-white rounded-xl border border-slate-200/80 shadow-sm text-center">
-              <div class="text-2xl font-black text-blue-700">7+ Years</div>
-              <div class="text-[11px] font-semibold text-slate-500 uppercase tracking-wide mt-0.5">Mumbai CA/CS Advisory</div>
-            </div>
-          </div>
-
         </div>
-
       </div>
+      <p class="text-sm text-slate-300 mb-6">100% paperless Aadhaar OTP video KYC. Compatible with e-Procurement, GeM Marketplace, MCA V3, ICEGATE, GSTN, and EPFO portals. FIPS certified USB token included.</p>
     </section>
 
-    <!-- ========================================================================= -->
-    <!-- 1. ROC & CORPORATE SECRETARIAL SERVICES -->
-    <!-- ========================================================================= -->
-    <section id="roc" class="py-16 bg-white border-t border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider mb-2">
-            Pillar 1 &bull; Ministry of Corporate Affairs
-          </span>
-          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            ROC &amp; Corporate Secretarial Services
-          </h2>
-          <p class="text-slate-600 text-sm mt-2">
-            End-to-end statutory management: Incorporation of Pvt Ltd &amp; LLP, Annual AOC-4 / MGT-7 filings, DIR-3 KYC, and DIR-11/12 changes backed by qualified Company Secretaries.
-          </p>
-        </div>
+  </main>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          <!-- Service Card 1 -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="building-2" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-base text-slate-900">Pvt Ltd &amp; LLP Incorporation</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-900">From ₹6,999</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Complete setup on MCA V3 via SPICe+ and FiLLiP forms with zero rejection rate.</p>
-              <ul class="text-xs text-slate-700 space-y-2 mb-6">
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Name approval &amp; 2 Director DSCs + DINs</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Customized e-MOA &amp; e-AOA drafting</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> PAN, TAN, EPFO, ESIC &amp; Bank Account</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> LLP Agreement drafting &amp; Form 3 filing</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20want%20to%20incorporate%20a%20Company/LLP%20in%20Mumbai." target="_blank" class="block w-full py-2.5 rounded-xl bg-brand-950 text-white font-bold text-xs text-center hover:bg-brand-900 transition">
-              Start Incorporation
-            </a>
-          </div>
-
-          <!-- Service Card 2 -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="user-check" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-base text-slate-900">DIR-11/12 &amp; Corporate Events</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-900">Event Based</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Director additions, resignations, registered office shifting, share capital increase, and strike-off.</p>
-              <ul class="text-xs text-slate-700 space-y-2 mb-6">
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> DIR-11 resignation &amp; DIR-12 appointment</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Annual Director DIR-3 KYC (Web &amp; e-Form)</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Form INC-20A Commencement of Business</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Form DPT-3 Return of Deposits &amp; STK-2 Closure</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20need%20help%20with%20Director%20Changes%20(DIR-11/12)%20or%20ROC%20filing." target="_blank" class="block w-full py-2.5 rounded-xl bg-brand-950 text-white font-bold text-xs text-center hover:bg-brand-900 transition">
-              Inquire Director Change
-            </a>
-          </div>
-
-          <!-- Service Card 3 -->
-          <div id="xbrl" class="bg-slate-50 p-6 rounded-2xl border border-purple-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="file-code-2" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-base text-slate-900">XBRL &amp; Annual ROC Filings</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-900">AOC-4 / MGT-7</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Mandatory MCA C&amp;I Taxonomy tagging and annual return submissions with complete CS verification.</p>
-              <ul class="text-xs text-slate-700 space-y-2 mb-6">
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Form AOC-4 XBRL &amp; non-XBRL financial statements</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Form MGT-7 / 7A annual return for companies</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> Form 8 &amp; Form 11 for Limited Liability Partnerships</li>
-                <li class="flex items-start gap-1.5"><i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i> MCA Validation Tool scrutiny guaranteed</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20need%20AOC-4%20XBRL%20Filing%20and%20Annual%20ROC%20support." target="_blank" class="block w-full py-2.5 rounded-xl bg-brand-950 text-white font-bold text-xs text-center hover:bg-purple-700 transition">
-              File Annual ROC &amp; XBRL
-            </a>
-          </div>
-
-        </div>
-
+  <!-- Interactive Compliance Calendar Modal Trigger Banner -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
+    <div class="bg-gradient-to-r from-blue-900/80 via-slate-900 to-amber-950/80 border border-amber-500/30 rounded-3xl p-8 text-center shadow-2xl">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold mb-4">
+        <i class="fa-solid fa-calendar-check"></i> Real-Time Statutory Tracker
       </div>
-    </section>
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Statutory Compliance Calendar 2026-27</h3>
+      <p class="text-slate-300 max-w-2xl mx-auto text-sm mb-6">Track all due dates across GST, Income Tax, ROC, EPFO, and Professional Tax updated in real time with official government circulars.</p>
+      <button onclick="openCalendarModal()" class="px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-base shadow-xl transition-all transform hover:scale-105">
+        <i class="fa-solid fa-eye mr-2"></i> Open Live Compliance Calendar
+      </button>
+    </div>
+  </section>
 
-    <!-- ========================================================================= -->
-    <!-- 2. COMPANY COMPLIANCE RETAINERSHIP PLAN (₹1,499/mo) -->
-    <!-- ========================================================================= -->
-    <section id="retainership" class="py-16 bg-slate-50 border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="bg-gradient-to-br from-brand-950 via-slate-900 to-brand-900 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
-          <div class="absolute -right-16 -top-16 w-96 h-96 rounded-full bg-emerald-500/10 blur-3xl pointer-events-none"></div>
-
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div class="lg:col-span-7">
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-bold mb-4">
-                <i data-lucide="shield" class="w-3.5 h-3.5 text-emerald-400"></i>
-                <span>Zero-Penalty MCA Protection Plan</span>
-              </div>
-              
-              <h2 class="font-display text-3xl sm:text-4xl font-extrabold leading-tight tracking-tight">
-                Company Compliance Retainership Plan
-              </h2>
-              
-              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
-                Eliminate punitive MCA delay fees of ₹100/day and protect directors against disqualification under Section 164(2). Our dedicated Company Secretary team handles your full statutory corporate lifecycle seamlessly.
-              </p>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6 text-xs text-slate-200">
-                <div class="flex items-start gap-2 bg-white/5 p-3 rounded-xl border border-white/10">
-                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Annual ROC Filings:</strong> Form AOC-4 (Financials) &amp; Form MGT-7/7A (Annual Return).</span>
-                </div>
-                <div class="flex items-start gap-2 bg-white/5 p-3 rounded-xl border border-white/10">
-                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                  <span><strong>DIR-3 KYC:</strong> Annual web/e-form KYC filing for all active DIN holders.</span>
-                </div>
-                <div class="flex items-start gap-2 bg-white/5 p-3 rounded-xl border border-white/10">
-                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Director Changes:</strong> Form DIR-11 &amp; DIR-12 for additions and resignations.</span>
-                </div>
-                <div class="flex items-start gap-2 bg-white/5 p-3 rounded-xl border border-white/10">
-                  <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
-                  <span><strong>Secretarial Records:</strong> Drafting Board minutes, AGM resolutions &amp; statutory registers.</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-5 bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/20 text-center">
-              <span class="text-xs uppercase tracking-wider font-bold text-emerald-300">All-Inclusive Corporate Retainer</span>
-              <div class="my-3">
-                <span class="text-4xl sm:text-5xl font-black text-white">₹1,499</span>
-                <span class="text-slate-300 text-sm font-semibold"> / Month</span>
-              </div>
-              <p class="text-xs text-slate-300 mb-6">Designed for Pvt Ltd, OPC, and LLPs across India. Fully CS-supervised compliance.</p>
-              
-              <div class="space-y-2.5">
-                <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20want%20to%20enroll%20for%20the%20Company%20Compliance%20Retainership%20Plan%20at%20Rs%201499/month." target="_blank" class="block w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider transition shadow-lg flex items-center justify-center gap-2">
-                  <i data-lucide="message-circle" class="w-4 h-4"></i> Lock Retainer on WhatsApp
-                </a>
-                <a href="mailto:advisedesk23@gmail.com?subject=Inquiry%20for%20Company%20Compliance%20Retainership%20at%201499" class="block w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs transition">
-                  Email Proposal Request
-                </a>
-              </div>
-            </div>
-
+  <!-- Footer -->
+  <footer class="bg-[#040711] border-t border-slate-800 text-slate-400 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-lg bg-slate-900 border border-amber-500/40 flex items-center justify-center p-1.5">
+            <svg viewBox="0 0 100 100" class="w-full h-full fill-amber-400">
+              <path d="M25 20 L70 20 C85 20 92 32 85 45 C78 58 65 65 50 65 L40 65 L40 85 L25 85 Z M40 32 L40 53 L52 53 C62 53 70 48 74 42 C78 36 74 32 65 32 Z"/>
+            </svg>
           </div>
-
+          <span class="text-lg font-bold text-white">Advise Desk</span>
         </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 3. ACCOUNTING & BOOKKEEPING SERVICES (From ₹999/mo) -->
-    <!-- ========================================================================= -->
-    <section id="accounting" class="py-16 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider mb-2">
-            Pillar 3 &bull; Financial Statements &amp; Ledgering
-          </span>
-          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Accounting &amp; Bookkeeping Services
-          </h2>
-          <p class="text-slate-600 text-sm mt-2">
-            Keep your financial ledgers clean, audit-ready, and compliant on Tally or Zoho Books. Starting from just <strong class="text-blue-700 font-bold">₹999 per month</strong>.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          
-          <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200 service-card">
-            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5 font-bold">
-              <i data-lucide="book-open" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-display font-bold text-lg text-slate-900 mb-2">Day-to-Day Ledger Maintenance</h3>
-            <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Systematic entry of purchase bills, sales invoices, petty cash, vendor vouchers, and digital transaction categorization.
-            </p>
-            <ul class="text-xs text-slate-700 space-y-2 font-medium">
-              <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Bank reconciliation (BRS)</li>
-              <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Customer &amp; Vendor balance ledgers</li>
-              <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Cloud integration (Zoho / Tally Prime)</li>
-            </ul>
-          </div>
-
-          <div class="bg-gradient-to-b from-blue-900 to-brand-950 text-white p-7 rounded-2xl border-2 border-blue-500 shadow-xl relative flex flex-col justify-between">
-            <div class="absolute -top-3 right-6 bg-brand-gold text-slate-950 text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full shadow">
-              Starts ₹999/mo
-            </div>
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-white/10 text-brand-goldLight flex items-center justify-center mb-5 font-bold">
-                <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
-              </div>
-              <h3 class="font-display font-bold text-lg text-white mb-2">Monthly MIS &amp; Final Statements</h3>
-              <p class="text-xs text-blue-200 leading-relaxed mb-4">
-                Real-time insights into your gross margins, monthly cash flows, expenses, and balance sheet performance.
-              </p>
-              <ul class="text-xs text-blue-100 space-y-2 font-medium mb-6">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-goldLight"></i> Monthly P&amp;L and Balance Sheet</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-goldLight"></i> Debtors &amp; Creditors ageing reports</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-goldLight"></i> Audit file readiness for CA finalization</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20am%20interested%20in%20Accounting%20Services%20starting%20at%20Rs%20999/mo." target="_blank" class="w-full py-2.5 rounded-xl bg-white text-brand-950 hover:bg-brand-50 font-bold text-xs uppercase tracking-wider text-center transition">
-              Book Accounting Plan
-            </a>
-          </div>
-
-          <div class="bg-slate-50 p-7 rounded-2xl border border-slate-200 service-card">
-            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5 font-bold">
-              <i data-lucide="calculator" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-display font-bold text-lg text-slate-900 mb-2">TDS &amp; Payroll Computation</h3>
-            <p class="text-xs text-slate-600 leading-relaxed mb-4">
-              Salary sheet preparation, TDS liability tracking on contractor/rent/professional fees, and PF/ESIC computation.
-            </p>
-            <ul class="text-xs text-slate-700 space-y-2 font-medium">
-              <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Monthly payroll statements</li>
-              <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Fixed Asset &amp; Depreciation schedules</li>
-              <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Smooth sync with GST and ITR returns</li>
-            </ul>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 4. GST RETURN FILING SERVICES (From ₹499/mo) -->
-    <!-- ========================================================================= -->
-    <section id="gst" class="py-16 bg-slate-50 border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="bg-gradient-to-r from-purple-50 via-white to-purple-50 rounded-3xl p-8 sm:p-12 border-2 border-purple-300 shadow-lg relative">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div class="lg:col-span-7">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-200/80 text-purple-900 text-xs font-extrabold mb-4">
-                <i data-lucide="percent" class="w-3.5 h-3.5 text-purple-800"></i>
-                <span>Pillar 4 &bull; Input Tax Credit (ITC) Protection</span>
-              </div>
-
-              <h2 class="font-display text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
-                GST Return Filing Services
-              </h2>
-              
-              <p class="text-slate-700 text-sm font-semibold mt-2">
-                Timely, zero-mismatch GST filing starting from just <span class="text-purple-700 font-bold">₹499 per month</span>.
-              </p>
-
-              <p class="text-slate-600 text-xs mt-3 leading-relaxed">
-                We perform automated cross-checking between your books and supplier-uploaded GSTR-2B invoices, making sure you never lose eligible Input Tax Credit (ITC) nor face Section 73/74 GST show-cause notices.
-              </p>
-
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 text-xs">
-                <div class="p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
-                  <div class="font-bold text-slate-900">GSTR-1 &amp; GSTR-3B</div>
-                  <div class="text-[11px] text-slate-500 mt-0.5">Monthly/Quarterly QRMP filing</div>
-                </div>
-                <div class="p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
-                  <div class="font-bold text-slate-900">2B Reconciliation</div>
-                  <div class="text-[11px] text-slate-500 mt-0.5">100% ITC matching to stop leakage</div>
-                </div>
-                <div class="p-3 bg-white rounded-xl border border-purple-200 shadow-sm">
-                  <div class="font-bold text-slate-900">Annual GSTR-9 / 9C</div>
-                  <div class="text-[11px] text-slate-500 mt-0.5">Year-end audit reconciliation</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-purple-300 shadow-md text-center">
-              <span class="inline-block px-3 py-1 rounded-full bg-purple-100 text-purple-900 text-xs font-bold uppercase tracking-wider mb-2">
-                GST Compliance Plan
-              </span>
-              <h3 class="font-display font-extrabold text-2xl text-slate-900">GST Monthly Returns</h3>
-              <div class="my-3">
-                <span class="text-4xl font-black text-purple-700">₹499</span>
-                <span class="text-xs font-bold text-slate-500"> / Month</span>
-              </div>
-              <p class="text-[11px] text-slate-500 mb-6">Nil or active turnover returns, invoice upload, and ITC ledger verification.</p>
-
-              <div class="space-y-2">
-                <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20am%20interested%20in%20GST%20Return%20Filing%20starting%20at%20Rs%20499/mo." target="_blank" class="block w-full py-3 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs uppercase tracking-wider transition shadow-md flex items-center justify-center gap-2">
-                  <i data-lucide="message-circle" class="w-4 h-4"></i> Start GST Filing on WhatsApp
-                </a>
-                <a href="mailto:advisedesk23@gmail.com?subject=Inquiry%20for%20GST%20Return%20Filing%20at%20499" class="block w-full py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs transition">
-                  Email GST Questions
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 5. TRADEMARK, MSME, ICEGATE & AD CODE REGISTRATION -->
-    <!-- ========================================================================= -->
-    <section id="ip-exim" class="py-16 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <span class="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold uppercase tracking-wider mb-2">
-            Pillar 5 &bull; Intellectual Property &amp; DGFT EXIM
-          </span>
-          <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Trademark, MSME, ICEGATE &amp; AD Code
-          </h2>
-          <p class="text-slate-600 text-sm mt-2">
-            Protect your proprietary intellectual property and establish seamless export-import customs clearance through Indian sea and air cargo ports.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-          
-          <!-- TM Card -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="stamp" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-sm text-slate-900">Trademark (TM)</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-900">From ₹3,999</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Class search, brand name &amp; logo filing under TM-A, reply to examination reports.</p>
-              <ul class="text-xs text-slate-700 space-y-1.5 mb-5">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Instant &trade; symbol rights</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Madrid protocol advisory</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20want%20to%20register%20a%20Trademark." target="_blank" class="block w-full py-2 rounded-xl bg-slate-900 text-white font-bold text-xs text-center hover:bg-slate-800 transition">
-              File Trademark
-            </a>
-          </div>
-
-          <!-- MSME Card -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="award" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-sm text-slate-900">MSME Udyam</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-100 text-emerald-900">From ₹499</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Udyam certificate generation for collateral-free bank loans &amp; 50% govt TM discount.</p>
-              <ul class="text-xs text-slate-700 space-y-1.5 mb-5">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Priority lending eligibility</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Delayed payment protection</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20need%20MSME%20Udyam%20Registration." target="_blank" class="block w-full py-2 rounded-xl bg-slate-900 text-white font-bold text-xs text-center hover:bg-slate-800 transition">
-              Get Udyam
-            </a>
-          </div>
-
-          <!-- IEC Card -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="plane" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-sm text-slate-900">Import Export Code</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-900">From ₹999</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Lifetime DGFT 10-digit Import Export Code generation with annual mandatory renewal.</p>
-              <ul class="text-xs text-slate-700 space-y-1.5 mb-5">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Lifetime validity</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> DGFT portal profile sync</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20need%20an%20Import%20Export%20Code%20(IEC)." target="_blank" class="block w-full py-2 rounded-xl bg-slate-900 text-white font-bold text-xs text-center hover:bg-slate-800 transition">
-              Apply IEC
-            </a>
-          </div>
-
-          <!-- AD Code Card -->
-          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 service-card flex flex-col justify-between">
-            <div>
-              <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold mb-4">
-                <i data-lucide="anchor" class="w-5 h-5"></i>
-              </div>
-              <div class="flex items-center justify-between mb-2">
-                <h3 class="font-bold text-sm text-slate-900">ICEGATE &amp; AD Code</h3>
-                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-indigo-100 text-indigo-900">Port Registration</span>
-              </div>
-              <p class="text-xs text-slate-500 mb-4">Authorised Dealer code registration at JNPT (Nhava Sheva), Mumbai Air Cargo &amp; ICEGATE.</p>
-              <ul class="text-xs text-slate-700 space-y-1.5 mb-5">
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Bank letter validation</li>
-                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Customs EDI linkup</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20need%20AD%20Code%20registration%20for%20ICEGATE/JNPT." target="_blank" class="block w-full py-2 rounded-xl bg-slate-900 text-white font-bold text-xs text-center hover:bg-slate-800 transition">
-              Register AD Code
-            </a>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 6. CLASS 3 DSC - 15 MINS ISSUANCE RECORD -->
-    <!-- ========================================================================= -->
-    <section id="dsc" class="py-16 bg-slate-50 border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="bg-gradient-to-r from-amber-50 via-white to-amber-50 rounded-3xl p-8 sm:p-12 border-2 border-brand-gold shadow-lg relative">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div class="lg:col-span-7">
-              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-200/70 text-amber-900 text-xs font-extrabold mb-4">
-                <i data-lucide="zap" class="w-3.5 h-3.5 text-amber-800"></i>
-                <span>15 Mins DSC Issuance Record</span>
-              </div>
-
-              <h2 class="font-display text-3xl sm:text-4xl font-black text-slate-900 leading-tight">
-                Class 3 DSC (Sign + Encrypt / Universal)
-              </h2>
-              
-              <p class="text-slate-700 text-sm font-semibold mt-2">
-                Emergency e-tender or RoC deadline? We generate your Class 3 token in record time.
-              </p>
-
-              <p class="text-slate-600 text-xs mt-3 leading-relaxed">
-                Paperless Aadhaar OTP verification or video KYC link sent right to your smartphone. Compatible with every major portal including <strong class="text-slate-900">e-Procurement, GeM, MCA V3, ICEGATE, GST &amp; EPFO</strong>.
-              </p>
-
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 text-xs">
-                <div class="p-3 bg-white rounded-xl border border-amber-200 shadow-sm">
-                  <div class="font-bold text-slate-900">100% Paperless</div>
-                  <div class="text-[11px] text-slate-500 mt-0.5">Aadhaar OTP / Video KYC</div>
-                </div>
-                <div class="p-3 bg-white rounded-xl border border-amber-200 shadow-sm">
-                  <div class="font-bold text-slate-900">FIPS USB Token</div>
-                  <div class="text-[11px] text-slate-500 mt-0.5">ePass2003 / Watchdata cryptotoken</div>
-                </div>
-                <div class="p-3 bg-white rounded-xl border border-amber-200 shadow-sm">
-                  <div class="font-bold text-slate-900">15-Min Turnaround</div>
-                  <div class="text-[11px] text-slate-500 mt-0.5">Express dispatch across Mumbai</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl border border-amber-300 shadow-md text-center">
-              <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold uppercase tracking-wider mb-2">
-                Universal Combo Token
-              </span>
-              <h3 class="font-display font-extrabold text-2xl text-slate-900">Class 3 DSC</h3>
-              <div class="my-3">
-                <span class="text-4xl font-black text-brand-gold">₹1,599</span>
-                <span class="text-xs font-bold text-slate-500"> / 2 Years Validity</span>
-              </div>
-              <p class="text-[11px] text-slate-500 mb-6">Compatible with e-Procurement, GeM, MCA V3, ICEGATE, GST &amp; EPFO.</p>
-
-              <div class="space-y-2">
-                <a href="https://wa.me/918767930751?text=Hi%20AdviseDesk,%20I%20urgently%20need%20a%20Class%203%20DSC%20(Sign%20%2B%20Encrypt)%20for%20tender/MCA." target="_blank" class="block w-full py-3 rounded-xl bg-brand-gold hover:bg-amber-600 text-white font-bold text-xs uppercase tracking-wider transition shadow-md flex items-center justify-center gap-2">
-                  <i data-lucide="zap" class="w-4 h-4"></i> Issue DSC in 15 Mins
-                </a>
-                <a href="tel:+918767930751" class="block w-full py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs transition">
-                  Call DSC Desk: +91 87679 30751
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 7. REAL-TIME COMPLIANCE CALENDAR (1:1 VAZ ASSOCIATES REPLICA) -->
-    <!-- ========================================================================= -->
-    <section id="calendar" class="py-16 bg-white border-b border-slate-200">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Top Title & Description -->
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <div>
-            <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-amber-100 text-amber-900 text-xs font-extrabold mb-2">
-              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-gold"></i>
-              <span>Statutory Tracking Tool</span>
-            </div>
-            <h2 class="font-display text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
-              Compliance Calendar
-            </h2>
-            <p class="text-slate-600 text-xs sm:text-sm mt-1 max-w-2xl leading-relaxed">
-              Track real-time statutory due dates for MCA Companies Act, GST, Income Tax, TDS, Maharashtra PT, and labor regulations with instant WhatsApp reminders.
-            </p>
-          </div>
-          
-          <div class="no-print shrink-0 flex items-center gap-2">
-            <button onclick="window.print()" class="px-3.5 py-2 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs transition flex items-center gap-1.5 shadow-sm">
-              <i data-lucide="printer" class="w-4 h-4 text-brand-gold"></i>
-              <span>Print / Save PDF</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Filter Controls matching screenshot -->
-        <div class="mb-6 p-4 bg-slate-50 border border-slate-200 rounded-xl no-print">
-          <div class="flex flex-wrap items-end gap-3 sm:gap-4">
-            
-            <!-- Month Selector -->
-            <div class="w-full sm:w-52">
-              <label for="monthSelect" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1">Select Month</label>
-              <div class="relative">
-                <select id="monthSelect" onchange="filterCalendar()" class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs font-medium text-slate-800 focus:outline-none focus:ring-1 focus:ring-slate-500 appearance-none pr-8 shadow-sm cursor-pointer">
-                  <option value="all">All months</option>
-                  <option value="2026-10">October 2026</option>
-                  <option value="2026-11">November 2026</option>
-                  <option value="2026-12">December 2026</option>
-                  <option value="2027-01">January 2027</option>
-                  <option value="2027-02">February 2027</option>
-                  <option value="2027-03">March 2027</option>
-                  <option value="2027-04">April 2027</option>
-                </select>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 absolute right-2.5 top-2.5 pointer-events-none"></i>
-              </div>
-            </div>
-
-            <!-- Act Selector -->
-            <div class="w-full sm:w-56">
-              <label for="actSelect" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1">Filter by Act</label>
-              <div class="relative">
-                <select id="actSelect" onchange="filterCalendar()" class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs font-medium text-slate-800 focus:outline-none focus:ring-1 focus:ring-slate-500 appearance-none pr-8 shadow-sm cursor-pointer">
-                  <option value="all">All Acts</option>
-                  <option value="Income-tax Act">Income-tax Act</option>
-                  <option value="GST">GST</option>
-                  <option value="Companies Act (ROC)">Companies Act (ROC)</option>
-                  <option value="LLP Act">LLP Act</option>
-                  <option value="EPF and ESI">EPF and ESI</option>
-                  <option value="Professional tax (Maharashtra)">Professional tax (Maharashtra)</option>
-                </select>
-                <i data-lucide="chevron-down" class="w-4 h-4 text-slate-500 absolute right-2.5 top-2.5 pointer-events-none"></i>
-              </div>
-            </div>
-
-            <!-- Search Keyword -->
-            <div class="w-full sm:w-48">
-              <label for="searchQuery" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1">Keyword Search</label>
-              <div class="relative">
-                <input type="text" id="searchQuery" oninput="filterCalendar()" placeholder="e.g. AOC-4, GSTR-3B" class="w-full bg-white border border-slate-300 rounded-lg px-3 py-2 text-xs font-medium text-slate-800 focus:outline-none focus:ring-1 focus:ring-slate-500 shadow-sm pl-8">
-                <i data-lucide="search" class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5 pointer-events-none"></i>
-              </div>
-            </div>
-
-            <!-- Upcoming Only Checkbox -->
-            <div class="flex items-center pb-2">
-              <label class="inline-flex items-center gap-2 cursor-pointer text-xs font-bold text-slate-800 select-none">
-                <input type="checkbox" id="upcomingOnly" checked onchange="filterCalendar()" class="w-3.5 h-3.5 text-blue-600 rounded border-slate-300 focus:ring-0 cursor-pointer">
-                <span>Upcoming only</span>
-              </label>
-            </div>
-
-            <!-- Reset Button -->
-            <div class="pb-1">
-              <button onclick="resetFilters()" class="px-3.5 py-1.5 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-slate-700 font-bold text-xs transition shadow-sm">
-                Reset
-              </button>
-            </div>
-
-          </div>
-
-          <!-- Dynamic Counter -->
-          <div class="mt-2.5 text-xs text-slate-600 font-semibold" id="dueDatesCountText">
-            Loading due dates...
-          </div>
-        </div>
-
-        <!-- Compliance Calendar Dynamic Tables Container (Enclosed in a Scrollable Box to Prevent Bloat) -->
-        <div class="border border-slate-200 rounded-2xl bg-white shadow-sm overflow-hidden">
-          <div id="calendarContent" class="max-h-[520px] overflow-y-auto divide-y divide-slate-100 p-4 sm:p-6 space-y-8"></div>
-        </div>
-
-        <!-- Empty State -->
-        <div id="emptyCalendarState" class="hidden text-center py-12 border border-slate-200 rounded-2xl bg-slate-50/50 mt-4">
-          <div class="w-12 h-12 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-3">
-            <i data-lucide="calendar-x" class="w-6 h-6"></i>
-          </div>
-          <h4 class="font-bold text-slate-800 text-sm">No compliance due dates match your selection</h4>
-          <p class="text-xs text-slate-500 mt-1">Try unchecking "Upcoming only" or selecting "All months".</p>
-          <button onclick="resetFilters()" class="mt-4 px-4 py-2 rounded-xl bg-slate-900 text-white font-bold text-xs">
-            Reset Filters
-          </button>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 8. INTERACTIVE RETAINER & FEE CALCULATOR -->
-    <!-- ========================================================================= -->
-    <section id="estimator" class="py-16 bg-brand-950 text-white relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="max-w-3xl mb-10">
-          <span class="text-brand-goldLight text-xs uppercase tracking-widest font-extrabold">Instant Quote Tool</span>
-          <h2 class="font-display text-3xl font-extrabold mt-1">Live Compliance &amp; Retainer Estimator</h2>
-          <p class="text-slate-300 text-xs sm:text-sm mt-1">Select your foundation package and supplementary modules to calculate transparent monthly and one-time fees.</p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          <!-- Controls Column -->
-          <div class="lg:col-span-5 bg-slate-900/90 p-6 rounded-2xl border border-slate-800">
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1. Choose Primary Package</label>
-            <div class="grid grid-cols-2 gap-2 mb-6 text-xs">
-              <button onclick="setBasePlan('retainer')" id="plan-retainer" class="plan-btn p-3 rounded-xl border border-emerald-500 bg-emerald-950/40 text-left font-bold text-emerald-300 transition">
-                Company Retainership
-                <span class="block text-[10px] text-slate-400 font-normal">₹1,499/mo (Full CS)</span>
-              </button>
-              <button onclick="setBasePlan('accounting')" id="plan-accounting" class="plan-btn p-3 rounded-xl border border-slate-700 bg-slate-800 text-left font-bold text-slate-300 transition">
-                Accounting Only
-                <span class="block text-[10px] text-slate-400 font-normal">₹999/mo (Ledgers)</span>
-              </button>
-              <button onclick="setBasePlan('gst-pack')" id="plan-gst-pack" class="plan-btn p-3 rounded-xl border border-slate-700 bg-slate-800 text-left font-bold text-slate-300 transition">
-                GST Return Filing
-                <span class="block text-[10px] text-slate-400 font-normal">₹499/mo (GSTR 1/3B)</span>
-              </button>
-              <button onclick="setBasePlan('dsc-quick')" id="plan-dsc-quick" class="plan-btn p-3 rounded-xl border border-slate-700 bg-slate-800 text-left font-bold text-slate-300 transition">
-                Class 3 DSC Token
-                <span class="block text-[10px] text-slate-400 font-normal">₹1,599 (15 Mins)</span>
-              </button>
-            </div>
-
-            <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">2. Add Supplementary Modules</label>
-            <div class="space-y-2 mb-6 text-xs">
-              <label class="flex items-center space-x-2.5 p-3 rounded-xl bg-slate-950/70 border border-slate-800 cursor-pointer">
-                <input type="checkbox" id="add-gst-check" onchange="recalculateTotal()" class="rounded text-brand-gold focus:ring-0">
-                <span>Add Monthly GST Return Filing (+₹499 / mo)</span>
-              </label>
-              <label class="flex items-center space-x-2.5 p-3 rounded-xl bg-slate-950/70 border border-slate-800 cursor-pointer">
-                <input type="checkbox" id="add-accounting-check" onchange="recalculateTotal()" class="rounded text-brand-gold focus:ring-0">
-                <span>Add Monthly Accounting &amp; Bookkeeping (+₹999 / mo)</span>
-              </label>
-              <label class="flex items-center space-x-2.5 p-3 rounded-xl bg-slate-950/70 border border-slate-800 cursor-pointer">
-                <input type="checkbox" id="add-dsc-check" checked onchange="recalculateTotal()" class="rounded text-brand-gold focus:ring-0">
-                <span>Add Class 3 Universal DSC Token (+₹1,599 / 2 yrs)</span>
-              </label>
-              <label class="flex items-center space-x-2.5 p-3 rounded-xl bg-slate-950/70 border border-slate-800 cursor-pointer">
-                <input type="checkbox" id="add-xbrl-check" onchange="recalculateTotal()" class="rounded text-brand-gold focus:ring-0">
-                <span>Add MCA AOC-4 XBRL Tagging (+₹4,999)</span>
-              </label>
-            </div>
-
-            <div class="text-[11px] text-slate-400 flex items-center gap-2">
-              <i data-lucide="info" class="w-4 h-4 text-brand-goldLight shrink-0"></i>
-              <span>Zero hidden fees. Direct MCA &amp; GST challans provided for statutory dues.</span>
-            </div>
-          </div>
-
-          <!-- Output Column -->
-          <div class="lg:col-span-7 bg-gradient-to-br from-slate-900 via-brand-900 to-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-700 shadow-2xl flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between pb-4 border-b border-slate-700/80">
-                <div>
-                  <span class="text-xs uppercase text-brand-goldLight font-bold tracking-wider" id="est-tag">Full Company Retainer</span>
-                  <h3 class="font-display text-2xl font-black text-white mt-0.5" id="est-heading">Company Compliance Retainership Plan</h3>
-                </div>
-                <div class="text-right">
-                  <div class="text-[11px] text-slate-400 font-medium">Estimated Pricing</div>
-                  <div class="text-3xl font-black text-brand-goldLight" id="est-total">₹1,499<span class="text-xs font-normal text-slate-300"> /mo</span></div>
-                </div>
-              </div>
-
-              <div class="py-5">
-                <h4 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-3">Included Scope of Work</h4>
-                <div class="space-y-2 text-xs" id="est-items-list"></div>
-              </div>
-            </div>
-
-            <div class="pt-5 border-t border-slate-700/80 flex flex-wrap items-center justify-between gap-4">
-              <div class="text-xs text-slate-400">
-                Official Desk Email:
-                <span class="block text-white font-semibold">advisedesk23@gmail.com</span>
-              </div>
-              <a id="est-whatsapp-action" href="https://wa.me/918767930751?text=Hello%20AdviseDesk,%20I%20am%20interested%20in%20the%20Corporate%20Retainership%20plan%20at%20Rs%201499/mo." target="_blank" class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider transition flex items-center gap-2 shadow-lg">
-                <i data-lucide="message-circle" class="w-4 h-4"></i> Lock Quote on WhatsApp
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 9. MUMBAI-MMR LOCAL PRESENCE & COVERAGE -->
-    <!-- ========================================================================= -->
-    <section class="py-14 bg-slate-50 border-t border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <span class="text-xs font-extrabold uppercase tracking-widest text-slate-400">Headquartered in Mumbai &bull; Serving Pan-India</span>
-        <h3 class="font-display text-2xl font-extrabold text-slate-900 mt-1 mb-6">Local Corporate Coverage Across Mumbai Metropolitan Region (MMR)</h3>
-        <div class="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto text-xs font-semibold text-slate-700">
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Bandra-Kurla Complex (BKC)</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Nariman Point &amp; Fort</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Andheri East &amp; MIDC</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Lower Parel &amp; Dadar</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Navi Mumbai &amp; Vashi</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Thane &amp; Wagle Estate</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">Borivali &amp; Goregaon</span>
-          <span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 shadow-sm">JNPT Customs &amp; Nhava Sheva</span>
+        <p class="text-xs text-slate-400 mb-4 leading-relaxed">Full-service corporate compliance and legal advisory firm in Mumbai — ROC, GST, ITR, Trademark, MSME, IEC, XBRL, Accounting, and Class 3 DSC.</p>
+        <div class="flex items-center gap-3 text-lg">
+          <a href="https://www.instagram.com/advisedeskindia/" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-pink-600 hover:text-white flex items-center justify-center transition-colors border border-slate-800"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/918767930751" target="_blank" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition-colors border border-slate-800"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="mailto:advisedesk23@gmail.com" class="w-9 h-9 rounded-lg bg-slate-900 hover:bg-blue-600 hover:text-white flex items-center justify-center transition-colors border border-slate-800"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
-    </section>
-
-    <!-- ========================================================================= -->
-    <!-- 10. CONTACT SECTION, FAQ & FOOTER -->
-    <!-- ========================================================================= -->
-    <section id="contact" class="py-16 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          
-          <div class="lg:col-span-5">
-            <span class="text-brand-gold text-xs uppercase tracking-widest font-extrabold">Connect With CA / CS Desk</span>
-            <h2 class="font-display text-3xl font-extrabold text-slate-900 mt-1 mb-4">Direct Corporate Inquiries</h2>
-            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
-              Reach our senior practitioners directly for your annual compliance, accounting setup, or 15-minute emergency Class 3 DSC token.
-            </p>
-
-            <div class="space-y-4 text-xs sm:text-sm text-slate-700">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-pink-50 border border-pink-200 flex items-center justify-center text-pink-600 shadow-sm shrink-0 font-bold">
-                  <i data-lucide="instagram" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-[11px] text-slate-400 font-bold uppercase">Official Instagram</div>
-                  <a href="https://www.instagram.com/advisedeskindia/" target="_blank" class="font-bold text-slate-900 hover:text-pink-600 transition">@advisedeskindia</a>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center text-brand-gold shadow-sm shrink-0 font-bold">
-                  <i data-lucide="mail" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-[11px] text-slate-400 font-bold uppercase">Official Email</div>
-                  <a href="mailto:advisedesk23@gmail.com" class="font-bold text-slate-900 hover:text-brand-600 transition">advisedesk23@gmail.com</a>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center text-brand-600 shadow-sm shrink-0 font-bold">
-                  <i data-lucide="phone-call" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-[11px] text-slate-400 font-bold uppercase">Helpline &amp; Calls</div>
-                  <a href="tel:+918767930751" class="font-bold text-slate-900 hover:text-brand-600 transition">+91 87679 30751</a>
-                </div>
-              </div>
-
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-center text-emerald-600 shadow-sm shrink-0 font-bold">
-                  <i data-lucide="message-circle" class="w-5 h-5"></i>
-                </div>
-                <div>
-                  <div class="text-[11px] text-slate-400 font-bold uppercase">WhatsApp Quick Response</div>
-                  <a href="https://wa.me/918767930751" target="_blank" class="font-bold text-slate-900 hover:text-emerald-600 transition">+91 87679 30751</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-7 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h3 class="font-display font-bold text-lg text-slate-900 mb-1">Send a Message</h3>
-            <p class="text-xs text-slate-500 mb-5">Fill in your requirements below for an instant callback or WhatsApp message.</p>
-
-            <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 mb-1">Your Name</label>
-                  <input type="text" id="custName" required placeholder="e.g. Anand Mehta" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs bg-white focus:outline-none focus:ring-1 focus:ring-slate-500">
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 mb-1">Mobile / WhatsApp Number</label>
-                  <input type="tel" id="custPhone" required placeholder="e.g. +91 98200XXXXX" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs bg-white focus:outline-none focus:ring-1 focus:ring-slate-500">
-                </div>
-              </div>
-
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 mb-1">Select Service</label>
-                  <select id="custService" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs bg-white focus:outline-none focus:ring-1 focus:ring-slate-500">
-                    <option value="Company Retainership (Rs 1499/mo)">Company Retainership Plan (₹1,499/mo)</option>
-                    <option value="Accounting & Bookkeeping (Rs 999/mo)">Accounting &amp; Bookkeeping (₹999/mo)</option>
-                    <option value="GST Return Filing (Rs 499/mo)">GST Return Filing (₹499/mo)</option>
-                    <option value="Class 3 DSC (15 Mins)">Class 3 DSC - 15 Mins (₹1,599 / 2 Yrs)</option>
-                    <option value="Statutory Calendar Inquiry">Statutory Compliance Deadline Inquiry</option>
-                    <option value="XBRL AOC-4 Filings">XBRL AOC-4 Financial Statements</option>
-                    <option value="DIR-11/12 Director Changes">DIR-11 / DIR-12 Director Changes</option>
-                    <option value="Trademark / ICEGATE AD Code">Trademark / ICEGATE AD Code</option>
-                  </select>
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
-                  <input type="email" id="custEmail" placeholder="e.g. office@yourcompany.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs bg-white focus:outline-none focus:ring-1 focus:ring-slate-500">
-                </div>
-              </div>
-
-              <div>
-                <label class="block text-xs font-bold text-slate-700 mb-1">Requirement Notes</label>
-                <textarea id="custNote" rows="3" placeholder="Describe your inquiry (e.g. urgent Class 3 DSC token, AOC-4 deadline assistance, or retainership for Pvt Ltd)..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 text-xs bg-white focus:outline-none focus:ring-1 focus:ring-slate-500"></textarea>
-              </div>
-
-              <button type="submit" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider transition flex items-center justify-center gap-2 shadow-sm">
-                <i data-lucide="send" class="w-4 h-4"></i> Send Inquiry via WhatsApp
-              </button>
-            </form>
-          </div>
-
-        </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#roc" class="hover:text-amber-400">ROC Secretarial</a></li>
+          <li><a href="#retainership" class="hover:text-amber-400">Compliance Retainership (₹1,499/mo)</a></li>
+          <li><a href="#accounting" class="hover:text-amber-400">Accounting & Bookkeeping (₹999/mo)</a></li>
+          <li><a href="#gst" class="hover:text-amber-400">GST Return Filing (₹499/mo)</a></li>
+        </ul>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-brand-950 text-slate-400 text-xs py-12 border-t border-brand-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
-          <div>
-            <div class="flex items-center gap-2.5 mb-3">
-              <div class="w-8 h-8 rounded-lg bg-brand-gold text-brand-950 flex items-center justify-center font-bold">
-                <i data-lucide="shield-check" class="w-5 h-5"></i>
-              </div>
-              <span class="font-display font-extrabold text-xl text-white">AdviseDesk</span>
-            </div>
-            <p class="text-slate-400 text-xs leading-relaxed mb-4">
-              Unified Corporate Retainership, Accounting &amp; Bookkeeping, GST Return Filing, and Class 3 Digital Signatures in Mumbai.
-            </p>
-            <div class="space-y-1 text-slate-300 font-medium">
-              <div>Email: <a href="mailto:advisedesk23@gmail.com" class="text-brand-goldLight hover:underline font-bold">advisedesk23@gmail.com</a></div>
-              <div>Phone: <a href="tel:+918767930751" class="text-brand-goldLight hover:underline font-bold">+91 87679 30751</a></div>
-              <div>Instagram: <a href="https://www.instagram.com/advisedeskindia/" target="_blank" class="text-pink-400 hover:underline font-bold">@advisedeskindia</a></div>
-            </div>
-          </div>
-
-          <div>
-            <h5 class="text-white font-bold uppercase text-xs tracking-wider mb-3">Retainers &amp; Accounts</h5>
-            <ul class="space-y-2">
-              <li><a href="#retainership" class="hover:text-white transition">Company Retainership (₹1,499/mo)</a></li>
-              <li><a href="#accounting" class="hover:text-white transition">Accounting &amp; Bookkeeping (₹999/mo)</a></li>
-              <li><a href="#gst" class="hover:text-white transition">GST Return Filing (₹499/mo)</a></li>
-              <li><a href="#xbrl" class="hover:text-white transition">AOC-4 XBRL Financial Filings</a></li>
-              <li><a href="#roc" class="hover:text-white transition">DIR-11 &amp; DIR-12 Director Changes</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 class="text-white font-bold uppercase text-xs tracking-wider mb-3">Class 3 DSC &amp; Portals</h5>
-            <ul class="space-y-2">
-              <li><a href="#dsc" class="hover:text-white transition">Class 3 DSC (₹1,599 / 2 Yrs)</a></li>
-              <li><a href="#dsc" class="hover:text-white transition">15 Mins Express Issuance Record</a></li>
-              <li><a href="#dsc" class="hover:text-white transition">FIPS USB Crypto Tokens</a></li>
-              <li><a href="#calendar" class="hover:text-white transition">Live Statutory Calendar</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 class="text-white font-bold uppercase text-xs tracking-wider mb-3">ROC &amp; Legal Practice</h5>
-            <ul class="space-y-2">
-              <li><a href="#roc" class="hover:text-white transition">Pvt Ltd &amp; LLP Incorporation</a></li>
-              <li><a href="#roc" class="hover:text-white transition">Annual AOC-4 &amp; MGT-7 Filings</a></li>
-              <li><a href="#roc" class="hover:text-white transition">Annual Director DIR-3 KYC</a></li>
-              <li><a href="#contact" class="hover:text-white transition">Direct Legal Advisory</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="pt-8 border-t border-brand-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
-          <div>
-            &copy; <span id="currentYear"></span> Advise Desk Mumbai. Official Email: <span class="text-slate-400">advisedesk23@gmail.com</span> | Helpline: +91 87679 30751.
-          </div>
-          <div class="flex items-center space-x-4">
-            <span class="text-slate-400">8,000+ Clients Served</span>
-            <span>&bull;</span>
-            <a href="https://www.instagram.com/advisedeskindia/" target="_blank" class="hover:text-pink-400 transition">Instagram</a>
-            <span>&bull;</span>
-            <a href="tel:+918767930751" class="hover:text-slate-300">+91 87679 30751</a>
-          </div>
-        </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Services & IP</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="#ip-exim" class="hover:text-amber-400">Trademark & Copyright</a></li>
+          <li><a href="#ip-exim" class="hover:text-amber-400">MSME Udyam Registration</a></li>
+          <li><a href="#ip-exim" class="hover:text-amber-400">Import Export Code (IEC)</a></li>
+          <li><a href="#dsc" class="hover:text-amber-400">Class 3 DSC (15 Mins)</a></li>
+        </ul>
       </div>
-    </footer>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-4">Contact Desk</h4>
+        <ul class="space-y-2 text-xs text-slate-300">
+          <li><i class="fa-solid fa-phone text-amber-400 mr-2"></i> +91 87679 30751</li>
+          <li><i class="fa-solid fa-envelope text-amber-400 mr-2"></i> advisedesk23@gmail.com</li>
+          <li><i class="fa-brands fa-instagram text-amber-400 mr-2"></i> @advisedeskindia</li>
+          <li><i class="fa-solid fa-location-dot text-amber-400 mr-2"></i> Mumbai, Maharashtra — 400001</li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 border-t border-slate-900 text-center text-xs text-slate-500">
+      © 2026 Advise Desk, Mumbai. All rights reserved. Licensed RA Agent · IT Act 2000 Compliant.
+    </div>
+  </footer>
 
-    <!-- Floating WhatsApp CTA with Ping Indicator -->
-    <a href="https://wa.me/918767930751?text=Hello%20AdviseDesk,%20I%20need%20assistance%20with%20Retainership,%20Accounting,%20or%20DSC." 
-      target="_blank" 
-      aria-label="Direct WhatsApp Chat"
-      class="fixed bottom-6 right-6 z-50 p-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-105 active:scale-95 transition-all duration-200 group">
+  <!-- Compliance Calendar Modal Popup -->
+  <div id="calendarModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-[#0B132B] border border-amber-500/40 w-full max-w-5xl rounded-3xl shadow-2xl flex flex-col max-h-[90vh] overflow-hidden">
       
-      <span class="absolute -top-1 -right-1 flex h-3.5 w-3.5">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3.5 w-3.5 bg-brand-goldLight border border-white"></span>
-      </span>
+      <!-- Modal Header -->
+      <div class="p-6 border-b border-slate-800 flex items-center justify-between bg-slate-900/90">
+        <div>
+          <h3 class="text-xl font-extrabold text-white flex items-center gap-2">
+            <i class="fa-solid fa-calendar-days text-amber-400"></i> Statutory Compliance Calendar 2026-27
+          </h3>
+          <p class="text-xs text-slate-400">Real-time due dates for GST, Income Tax, ROC, LLP, EPF/ESI & Maharashtra Professional Tax.</p>
+        </div>
+        <button onclick="closeCalendarModal()" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition-colors">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
 
-      <i data-lucide="message-circle" class="w-7 h-7"></i>
-      <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out px-0 group-hover:px-2.5 text-xs font-bold">
-        Chat with Desk
-      </span>
-    </a>
+      <!-- Controls & Filters -->
+      <div class="p-4 bg-slate-900/50 border-b border-slate-800 flex flex-wrap gap-4 items-center justify-between text-xs">
+        <div class="flex flex-wrap items-center gap-3">
+          <div>
+            <label class="block text-slate-400 mb-1">Month</label>
+            <select id="filterMonth" onchange="filterCalendar()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-amber-400">
+              <option value="all">All months</option>
+              <option value="October 2026">October 2026</option>
+              <option value="November 2026">November 2026</option>
+              <option value="December 2026">December 2026</option>
+              <option value="January 2027">January 2027</option>
+              <option value="February 2027">February 2027</option>
+              <option value="March 2027">March 2027</option>
+              <option value="April 2027">April 2027</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-slate-400 mb-1">Act / Authority</label>
+            <select id="filterAct" onchange="filterCalendar()" class="bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-amber-400">
+              <option value="all">All Acts</option>
+              <option value="Income-tax Act">Income-tax Act</option>
+              <option value="GST">GST</option>
+              <option value="Companies Act (ROC)">Companies Act (ROC)</option>
+              <option value="LLP Act">LLP Act</option>
+              <option value="EPF and ESI">EPF and ESI</option>
+              <option value="Professional tax (Maharashtra)">Professional tax (Maharashtra)</option>
+            </select>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span id="rowCount" class="text-amber-400 font-bold"></span>
+          <button onclick="resetCalendarFilters()" class="px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium">Reset</button>
+        </div>
+      </div>
 
-    <!-- ========================================================================= -->
-    <!-- JAVASCRIPT: CALENDAR ENGINE & INTERACTIVE LOGIC -->
-    <!-- ========================================================================= -->
-    <script>
-      // Complete Statutory Compliance Dataset including latest MCA & CBDT extensions
-      const complianceData = [
-        // OCTOBER 2026
-        {
-          isoDate: '2026-10-07',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '7 Oct 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in September 2026 deposited',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2026-10-10',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '10 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for September 2026',
-          appliesTo: 'GST deductors and e-commerce operators'
-        },
-        {
-          isoDate: '2026-10-11',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '11 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for September 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2026-10-13',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '13 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-6 for September 2026',
-          appliesTo: 'Input service distributors'
-        },
-        {
-          isoDate: '2026-10-13',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '13 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for July to September 2026',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2026-10-15',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '15 Oct 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Quarterly statement in Form 15CC for July to September 2026 for authorized dealers in respect of remittances',
-          appliesTo: 'Authorized dealers'
-        },
-        {
-          isoDate: '2026-10-15',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '15 Oct 2026',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Professional tax (PTRC) payment and monthly return for salaries and wages of September 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)',
-          appliesTo: 'Employers paying monthly'
-        },
-        {
-          isoDate: '2026-10-20',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '20 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for September 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2026-10-22',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '22 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for July to September 2026',
-          appliesTo: 'QRMP taxpayers (Group A: Maharashtra, Goa, Gujarat, Karnataka, Tamil Nadu, etc.)'
-        },
-        {
-          isoDate: '2026-10-24',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '24 Oct 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for July to September 2026',
-          appliesTo: 'QRMP taxpayers (Group B: Delhi, UP, Rajasthan, Haryana, etc.)'
-        },
-        {
-          isoDate: '2026-10-30',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '30 Oct 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Challan-cum-statement for TDS deducted in September 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)',
-          appliesTo: 'Individual and HUF payers'
-        },
-        {
-          isoDate: '2026-10-30',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '30 Oct 2026',
-          act: 'LLP Act',
-          actClass: 'pill-llp-act',
-          compliance: 'Form 8, Statement of Account and Solvency, for FY 2025-26',
-          appliesTo: 'LLPs'
-        },
-        {
-          isoDate: '2026-10-31',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '31 Oct 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Quarterly TDS statements for July to September 2026 (Forms 24Q, 26Q & 27Q)',
-          appliesTo: 'Deductors'
-        },
-        {
-          isoDate: '2026-10-31',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '31 Oct 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: "Transfer pricing accountant's report for FY 2025-26",
-          appliesTo: 'Taxpayers with international or specified domestic transactions'
-        },
-        {
-          isoDate: '2026-10-31',
-          monthKey: '2026-10',
-          monthLabel: 'October 2026',
-          displayDate: '31 Oct 2026',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund contributions and ECR for September 2026, extended from 15 October 2026 by EPFO on 13 October 2026; does not cover ESI contributions',
-          appliesTo: 'Employers'
-        },
+      <!-- Calendar Table Body -->
+      <div class="overflow-y-auto p-6 flex-1 space-y-6" id="calendarBody">
+        <!-- Rendered via JavaScript -->
+      </div>
 
-        // NOVEMBER 2026
-        {
-          isoDate: '2026-11-07',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '7 Nov 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in October 2026 deposited',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2026-11-10',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '10 Nov 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for October 2026',
-          appliesTo: 'GST deductors and e-commerce operators'
-        },
-        {
-          isoDate: '2026-11-11',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '11 Nov 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for October 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2026-11-13',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '13 Nov 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'Invoice Furnishing Facility (IFF) for October 2026, optional',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2026-11-13',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '13 Nov 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-6 for October 2026',
-          appliesTo: 'Input service distributors'
-        },
-        {
-          isoDate: '2026-11-15',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '15 Nov 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Quarterly TDS certificates (other than salary) for July to September 2026',
-          appliesTo: 'Deductors'
-        },
-        {
-          isoDate: '2026-11-15',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '15 Nov 2026',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund and ESI contributions for October 2026',
-          appliesTo: 'Employers'
-        },
-        {
-          isoDate: '2026-11-15',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '15 Nov 2026',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Professional tax (PTRC) payment and monthly return for salaries and wages of October 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)',
-          appliesTo: 'Employers paying monthly'
-        },
-        {
-          isoDate: '2026-11-20',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '20 Nov 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for October 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2026-11-21',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '21 Nov 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Income tax return for FY 2025-26, extended from 31 October 2026 by CBDT on 28 September 2026',
-          appliesTo: 'Companies, taxpayers requiring audit, partners of audited firms'
-        },
-        {
-          isoDate: '2026-11-25',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '25 Nov 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'PMT-06 GST payment for October 2026',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2026-11-30',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '30 Nov 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Challan-cum-statement for TDS deducted in October 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)',
-          appliesTo: 'Individual and HUF payers'
-        },
-        {
-          isoDate: '2026-11-30',
-          monthKey: '2026-11',
-          monthLabel: 'November 2026',
-          displayDate: '30 Nov 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Income tax return for FY 2025-26 (not covered by the 21 November extension)',
-          appliesTo: 'Taxpayers required to furnish a transfer pricing report'
-        },
+      <!-- Modal Footer -->
+      <div class="p-4 bg-slate-900 border-t border-slate-800 flex justify-between items-center text-xs">
+        <span class="text-slate-400">Need expert assistance for these filings? WhatsApp our desk instantly.</span>
+        <a href="https://wa.me/918767930751?text=Hi%2C%20I%20need%20help%20with%20upcoming%20compliances" target="_blank" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-bold">
+          <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp Compliance Desk
+        </a>
+      </div>
 
-        // DECEMBER 2026
-        {
-          isoDate: '2026-12-07',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '7 Dec 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in November 2026 deposited',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2026-12-10',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '10 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-7 (TDS under GST) and GSTR-8 (TCS by e-commerce operators) for November 2026',
-          appliesTo: 'GST deductors and e-commerce operators'
-        },
-        {
-          isoDate: '2026-12-11',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '11 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for November 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2026-12-13',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '13 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'Invoice Furnishing Facility (IFF) for November 2026, optional',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2026-12-13',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '13 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-6 for November 2026',
-          appliesTo: 'Input service distributors'
-        },
-        {
-          isoDate: '2026-12-15',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '15 Dec 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Third instalment of advance tax for tax year 2026-27 (75 per cent cumulative)',
-          appliesTo: 'Taxpayers liable to advance tax'
-        },
-        {
-          isoDate: '2026-12-15',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '15 Dec 2026',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund and ESI contributions for November 2026',
-          appliesTo: 'Employers'
-        },
-        {
-          isoDate: '2026-12-15',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '15 Dec 2026',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Professional tax (PTRC) payment and monthly return for salaries and wages of November 2026 (due date moved from the last day of the month to the 15th by the Profession Tax (Amendment) Rules, 2026 notified on 28 February 2026)',
-          appliesTo: 'Employers paying monthly'
-        },
-        {
-          isoDate: '2026-12-20',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '20 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for November 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2026-12-25',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '25 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'PMT-06 GST payment for November 2026',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2026-12-30',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '30 Dec 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Challan-cum-statement for TDS deducted in November 2026 on purchase of immovable property, rent paid by certain individuals and HUFs, and certain contract or professional payments by individuals (formerly Forms 26QB, 26QC and 26QD)',
-          appliesTo: 'Individual and HUF payers'
-        },
-        {
-          isoDate: '2026-12-31',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '31 Dec 2026',
-          act: 'Companies Act (ROC)',
-          actClass: 'pill-companies-act',
-          compliance: 'Form AOC-4 (Financial Statements & XBRL) for FY 2025-26 [EXTENDED without additional fees under MCA General Circular No. 05/2026 from 30 Oct 2026]',
-          appliesTo: 'All Companies holding AGM on or before 30 September 2026'
-        },
-        {
-          isoDate: '2026-12-31',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '31 Dec 2026',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Belated income tax return for FY 2025-26; revised return without late fee',
-          appliesTo: 'Individuals and businesses'
-        },
-        {
-          isoDate: '2026-12-31',
-          monthKey: '2026-12',
-          monthLabel: 'December 2026',
-          displayDate: '31 Dec 2026',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-9 annual return and GSTR-9C reconciliation statement for FY 2025-26',
-          appliesTo: 'Registered taxpayers, where applicable'
-        },
+    </div>
+  </div>
 
-        // JANUARY 2027
-        {
-          isoDate: '2027-01-07',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '7 Jan 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in December 2026 deposited',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2027-01-10',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '10 Jan 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-7 (TDS under GST) and GSTR-8 (TCS) for December 2026',
-          appliesTo: 'GST deductors and e-commerce operators'
-        },
-        {
-          isoDate: '2027-01-11',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '11 Jan 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for December 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-01-13',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '13 Jan 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for October to December 2026',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2027-01-15',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '15 Jan 2027',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund and ESI contributions for December 2026',
-          appliesTo: 'Employers'
-        },
-        {
-          isoDate: '2027-01-15',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '15 Jan 2027',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Professional tax (PTRC) payment and monthly return for December 2026',
-          appliesTo: 'Employers paying monthly'
-        },
-        {
-          isoDate: '2027-01-20',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '20 Jan 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for December 2026',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-01-22',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '22 Jan 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for October to December 2026',
-          appliesTo: 'QRMP taxpayers (Group A: Maharashtra, Goa, Gujarat, etc.)'
-        },
-        {
-          isoDate: '2027-01-31',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '31 Jan 2027',
-          act: 'Companies Act (ROC)',
-          actClass: 'pill-companies-act',
-          compliance: 'Form MGT-7 / MGT-7A Annual Return for FY 2025-26 [EXTENDED without additional fees under MCA General Circular No. 05/2026 from 29 Nov 2026]',
-          appliesTo: 'Companies that held AGM on 30 September 2026'
-        },
-        {
-          isoDate: '2027-01-31',
-          monthKey: '2027-01',
-          monthLabel: 'January 2027',
-          displayDate: '31 Jan 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Quarterly TDS statements for October to December 2026 (Forms 24Q, 26Q & 27Q)',
-          appliesTo: 'Deductors'
-        },
+  <!-- JavaScript for Calendar & Interactivity -->
+  <script>
+    const complianceData = [
+      { month: "October 2026", date: "20 Oct 2026", act: "GST", compliance: "GSTR-3B for September 2026", applies: "Monthly filers" },
+      { month: "October 2026", date: "21 Oct 2026", act: "Income-tax Act", compliance: "Tax audit report for FY 2025-26 (Form 3CA/3CB with 3CD), extended by CBDT", applies: "Taxpayers whose accounts must be audited" },
+      { month: "October 2026", date: "22 Oct 2026", act: "GST", compliance: "GSTR-3B for July to September 2026 (QRMP)", applies: "QRMP taxpayers in Maharashtra, Gujarat, Goa, Karnataka, etc." },
+      { month: "October 2026", date: "30 Oct 2026", act: "Companies Act (ROC)", compliance: "AOC-4 financial statements for FY 2025-26", applies: "Companies that held AGM on 30 Sept 2026" },
+      { month: "October 2026", date: "30 Oct 2026", act: "LLP Act", compliance: "Form 8, Statement of Account and Solvency, for FY 2025-26", applies: "LLPs" },
+      { month: "October 2026", date: "31 Oct 2026", act: "Income-tax Act", compliance: "Quarterly TDS statements for July to September 2026", applies: "Deductors" },
+      
+      { month: "November 2026", date: "7 Nov 2026", act: "Income-tax Act", compliance: "TDS and TCS deducted or collected in October 2026 deposited", applies: "Deductors and collectors" },
+      { month: "November 2026", date: "11 Nov 2026", act: "GST", compliance: "GSTR-1 for October 2026", applies: "Monthly filers" },
+      { month: "November 2026", date: "15 Nov 2026", act: "Professional tax (Maharashtra)", compliance: "Professional tax (PTRC) payment and monthly return for October 2026", applies: "Employers paying monthly" },
+      { month: "November 2026", date: "20 Nov 2026", act: "GST", compliance: "GSTR-3B for October 2026", applies: "Monthly filers" },
+      { month: "November 2026", date: "21 Nov 2026", act: "Income-tax Act", compliance: "Income tax return for FY 2025-26 (extended by CBDT)", applies: "Companies, tax audit cases" },
+      { month: "November 2026", date: "29 Nov 2026", act: "Companies Act (ROC)", compliance: "MGT-7 / MGT-7A annual return for FY 2025-26", applies: "Companies that held AGM on 30 Sept 2026" },
 
-        // FEBRUARY 2027
-        {
-          isoDate: '2027-02-07',
-          monthKey: '2027-02',
-          monthLabel: 'February 2027',
-          displayDate: '7 Feb 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in January 2027 deposited',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2027-02-11',
-          monthKey: '2027-02',
-          monthLabel: 'February 2027',
-          displayDate: '11 Feb 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for January 2027',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-02-15',
-          monthKey: '2027-02',
-          monthLabel: 'February 2027',
-          displayDate: '15 Feb 2027',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund and ESI contributions for January 2027',
-          appliesTo: 'Employers'
-        },
-        {
-          isoDate: '2027-02-15',
-          monthKey: '2027-02',
-          monthLabel: 'February 2027',
-          displayDate: '15 Feb 2027',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Professional tax (PTRC) payment and monthly return for January 2027',
-          appliesTo: 'Employers paying monthly'
-        },
-        {
-          isoDate: '2027-02-20',
-          monthKey: '2027-02',
-          monthLabel: 'February 2027',
-          displayDate: '20 Feb 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for January 2027',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-02-25',
-          monthKey: '2027-02',
-          monthLabel: 'February 2027',
-          displayDate: '25 Feb 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'PMT-06 GST payment for January 2027',
-          appliesTo: 'QRMP taxpayers'
-        },
+      { month: "December 2026", date: "7 Dec 2026", act: "Income-tax Act", compliance: "TDS & TCS deposited for November 2026", applies: "Deductors" },
+      { month: "December 2026", date: "11 Dec 2026", act: "GST", compliance: "GSTR-1 for November 2026", applies: "Monthly filers" },
+      { month: "December 2026", date: "15 Dec 2026", act: "Income-tax Act", compliance: "Third instalment of advance tax for tax year 2026-27 (75%)", applies: "Taxpayers liable to advance tax" },
+      { month: "December 2026", date: "20 Dec 2026", act: "GST", compliance: "GSTR-3B for November 2026", applies: "Monthly filers" },
+      { month: "December 2026", date: "31 Dec 2026", act: "Income-tax Act", compliance: "Belated ITR for FY 2025-26; revised return without late fee", applies: "Individuals and businesses" },
+      { month: "December 2026", date: "31 Dec 2026", act: "GST", compliance: "GSTR-9 annual return & GSTR-9C reconciliation for FY 2025-26", applies: "Registered taxpayers" },
 
-        // MARCH 2027
-        {
-          isoDate: '2027-03-07',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '7 Mar 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in February 2027 deposited',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2027-03-11',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '11 Mar 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for February 2027',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-03-15',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '15 Mar 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Fourth instalment of advance tax for tax year 2026-27 (100 per cent cumulative)',
-          appliesTo: 'Taxpayers liable to advance tax'
-        },
-        {
-          isoDate: '2027-03-15',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '15 Mar 2027',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund and ESI contributions for February 2027',
-          appliesTo: 'Employers'
-        },
-        {
-          isoDate: '2027-03-15',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '15 Mar 2027',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Professional tax (PTRC) payment and monthly return for February 2027',
-          appliesTo: 'Employers paying monthly'
-        },
-        {
-          isoDate: '2027-03-20',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '20 Mar 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for February 2027',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-03-31',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '31 Mar 2027',
-          act: 'Professional tax (Maharashtra)',
-          actClass: 'pill-pt-mah',
-          compliance: 'Annual Professional Tax payment (PTEC Form I) for Directors, Designated Partners, and Professionals (₹2,500)',
-          appliesTo: 'Enrolled persons and directors in Maharashtra'
-        },
-        {
-          isoDate: '2027-03-31',
-          monthKey: '2027-03',
-          monthLabel: 'March 2027',
-          displayDate: '31 Mar 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'Last date for filing Updated Return (Form ITR-U) for AY 2024-25',
-          appliesTo: 'Taxpayers updating previously filed returns'
-        },
+      { month: "January 2027", date: "7 Jan 2027", act: "Income-tax Act", compliance: "TDS & TCS deposited for December 2026", applies: "Deductors" },
+      { month: "January 2027", date: "11 Jan 2027", act: "GST", compliance: "GSTR-1 for December 2026", applies: "Monthly filers" },
+      { month: "January 2027", date: "20 Jan 2027", act: "GST", compliance: "GSTR-3B for December 2026", applies: "Monthly filers" },
+      { month: "January 2027", date: "31 Jan 2027", act: "Income-tax Act", compliance: "Quarterly TDS statements for Oct-Dec 2026", applies: "Deductors" },
 
-        // APRIL 2027
-        {
-          isoDate: '2027-04-11',
-          monthKey: '2027-04',
-          monthLabel: 'April 2027',
-          displayDate: '11 Apr 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for March 2027 (Financial Year 2026-27 Close)',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-04-13',
-          monthKey: '2027-04',
-          monthLabel: 'April 2027',
-          displayDate: '13 Apr 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-1 for January to March 2027',
-          appliesTo: 'QRMP taxpayers'
-        },
-        {
-          isoDate: '2027-04-15',
-          monthKey: '2027-04',
-          monthLabel: 'April 2027',
-          displayDate: '15 Apr 2027',
-          act: 'EPF and ESI',
-          actClass: 'pill-epf-esi',
-          compliance: 'Provident Fund and ESI contributions for March 2027',
-          appliesTo: 'Employers'
-        },
-        {
-          isoDate: '2027-04-20',
-          monthKey: '2027-04',
-          monthLabel: 'April 2027',
-          displayDate: '20 Apr 2027',
-          act: 'GST',
-          actClass: 'pill-gst',
-          compliance: 'GSTR-3B for March 2027',
-          appliesTo: 'Monthly filers'
-        },
-        {
-          isoDate: '2027-04-30',
-          monthKey: '2027-04',
-          monthLabel: 'April 2027',
-          displayDate: '30 Apr 2027',
-          act: 'Income-tax Act',
-          actClass: 'pill-income-tax',
-          compliance: 'TDS and TCS deducted or collected in March 2027 deposited (Extended fiscal closing date)',
-          appliesTo: 'Deductors and collectors'
-        },
-        {
-          isoDate: '2027-04-30',
-          monthKey: '2027-04',
-          monthLabel: 'April 2027',
-          displayDate: '30 Apr 2027',
-          act: 'Companies Act (ROC)',
-          actClass: 'pill-companies-act',
-          compliance: 'Form MSME-1 half-yearly return for period ending 31 March 2027 for outstanding vendor dues',
-          appliesTo: 'Specified companies with MSME vendor dues > 45 days'
-        }
-      ];
+      { month: "February 2027", date: "11 Feb 2027", act: "GST", compliance: "GSTR-1 for January 2027", applies: "Monthly filers" },
+      { month: "February 2027", date: "20 Feb 2027", act: "GST", compliance: "GSTR-3B for January 2027", applies: "Monthly filers" },
 
-      // Reference today's date for 'Upcoming only' filter logic: 25 Oct 2026
-      const REFERENCE_TODAY = '2026-10-25';
+      { month: "March 2027", date: "15 Mar 2027", act: "Income-tax Act", compliance: "Fourth instalment of advance tax (100%) & presumptive single instalment", applies: "Taxpayers liable to advance tax" },
+      { month: "March 2027", date: "15 Mar 2027", act: "Professional tax (Maharashtra)", compliance: "Professional tax annual return for 2026-27 (moved to 15th March)", applies: "Employers paying annually" },
+      { month: "March 2027", date: "20 Mar 2027", act: "GST", compliance: "GSTR-3B for February 2027", applies: "Monthly filers" },
+      { month: "March 2027", date: "31 Mar 2027", act: "Income-tax Act", compliance: "Last date for tax-saving investments under old regime", applies: "Individuals" }
+    ];
 
-      function filterCalendar() {
-        const monthVal = document.getElementById('monthSelect').value;
-        const actVal = document.getElementById('actSelect').value;
-        const searchQuery = (document.getElementById('searchQuery').value || '').trim().toLowerCase();
-        const upcomingChecked = document.getElementById('upcomingOnly').checked;
+    function openCalendarModal() {
+      document.getElementById('calendarModal').classList.remove('hidden');
+      document.getElementById('calendarModal').classList.add('flex');
+      renderCalendar(complianceData);
+    }
 
-        const container = document.getElementById('calendarContent');
-        const emptyState = document.getElementById('emptyCalendarState');
-        const countText = document.getElementById('dueDatesCountText');
+    function closeCalendarModal() {
+      document.getElementById('calendarModal').classList.remove('flex');
+      document.getElementById('calendarModal').classList.add('hidden');
+    }
 
-        // Filter rows
-        const filtered = complianceData.filter(item => {
-          if (monthVal !== 'all' && item.monthKey !== monthVal) return false;
-          if (actVal !== 'all' && item.act !== actVal) return false;
-          if (upcomingChecked && item.isoDate < REFERENCE_TODAY) return false;
-          if (searchQuery) {
-            const combined = (item.compliance + ' ' + item.appliesTo + ' ' + item.act + ' ' + item.displayDate).toLowerCase();
-            if (!combined.includes(searchQuery)) return false;
-          }
-          return true;
-        });
+    function renderCalendar(data) {
+      const container = document.getElementById('calendarBody');
+      const countEl = document.getElementById('rowCount');
+      countEl.innerText = `${data.length} due dates shown`;
 
-        countText.textContent = `${filtered.length} due dates shown`;
-
-        if (filtered.length === 0) {
-          container.innerHTML = '';
-          emptyState.classList.remove('hidden');
-          return;
-        }
-
-        emptyState.classList.add('hidden');
-
-        // Group rows by month label
-        const grouped = {};
-        filtered.forEach(row => {
-          if (!grouped[row.monthLabel]) {
-            grouped[row.monthLabel] = [];
-          }
-          grouped[row.monthLabel].push(row);
-        });
-
-        // Build HTML with Sticky Headers
-        let html = '';
-        for (const [monthHeading, items] of Object.entries(grouped)) {
-          html += `
-            <div class="calendar-month-block">
-              <!-- Month Title in serif font matching vazassociates.in -->
-              <h3 class="font-serif text-xl sm:text-2xl font-bold text-slate-900 mb-3 tracking-tight flex items-center justify-between">
-                <span>${monthHeading}</span>
-                <span class="text-xs font-sans font-normal text-slate-500">${items.length} deadlines</span>
-              </h3>
-
-              <!-- 4-Column Table -->
-              <div class="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm">
-                <div class="overflow-x-auto">
-                  <table class="w-full text-left border-collapse text-xs">
-                    <thead>
-                      <tr class="border-b border-slate-200 text-[11px] font-bold text-slate-600 uppercase tracking-wider bg-slate-50 sticky top-0 z-10">
-                        <th class="py-2.5 px-4 w-28 font-semibold">DUE DATE</th>
-                        <th class="py-2.5 px-4 w-44 font-semibold">ACT</th>
-                        <th class="py-2.5 px-4 font-semibold">COMPLIANCE</th>
-                        <th class="py-2.5 px-4 w-60 font-semibold">WHO IT APPLIES TO</th>
-                        <th class="py-2.5 px-4 w-24 text-right font-semibold no-print">ACTION</th>
-                      </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-200">
-          `;
-
-          items.forEach(item => {
-            const waReminder = encodeURIComponent(`Hi AdviseDesk, I need help with upcoming compliance: ${item.compliance} (Due: ${item.displayDate}).`);
-            html += `
-              <tr class="hover:bg-slate-50/70 transition-colors">
-                <!-- DUE DATE -->
-                <td class="py-3 px-4 text-slate-900 font-semibold whitespace-nowrap align-top">
-                  ${item.displayDate}
-                </td>
-                <!-- ACT (With rounded pill badge) -->
-                <td class="py-3 px-4 align-top whitespace-nowrap">
-                  <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-medium ${item.actClass}">
-                    ${item.act}
-                  </span>
-                </td>
-                <!-- COMPLIANCE -->
-                <td class="py-3 px-4 text-slate-700 leading-relaxed align-top">
-                  ${item.compliance}
-                </td>
-                <!-- WHO IT APPLIES TO -->
-                <td class="py-3 px-4 text-slate-600 leading-relaxed align-top">
-                  ${item.appliesTo}
-                </td>
-                <!-- ACTION (WhatsApp Direct Remind/File) -->
-                <td class="py-3 px-4 align-top text-right whitespace-nowrap no-print">
-                  <a href="https://wa.me/918767930751?text=${waReminder}" target="_blank" class="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 font-bold text-[10px] transition">
-                    <i data-lucide="message-circle" class="w-3 h-3 text-emerald-600"></i>
-                    <span>File</span>
-                  </a>
-                </td>
-              </tr>
-            `;
-          });
-
-          html += `
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          `;
-        }
-
-        container.innerHTML = html;
-        lucide.createIcons();
+      if (data.length === 0) {
+        container.innerHTML = `<div class="text-center py-12 text-slate-400">No due dates match this selection.</div>`;
+        return;
       }
 
-      function resetFilters() {
-        document.getElementById('monthSelect').value = 'all';
-        document.getElementById('actSelect').value = 'all';
-        document.getElementById('searchQuery').value = '';
-        document.getElementById('upcomingOnly').checked = false;
-        filterCalendar();
-      }
-
-      // Fee Estimator State & Calculations
-      const plansData = {
-        'retainer': {
-          tag: 'Full Corporate Retainership',
-          title: 'Company Compliance Retainership Plan',
-          basePrice: 1499,
-          isMonthly: true,
-          items: [
-            'Annual ROC Filings (Form AOC-4 & MGT-7/7A)',
-            'Director DIR-3 KYC for all active DINs',
-            'DIR-11 / DIR-12 Director appointments and resignations',
-            'Drafting Board Meeting Minutes, Notices & AGM Resolutions',
-            'Maintenance of Statutory Registers under Companies Act 2013'
-          ]
-        },
-        'accounting': {
-          tag: 'Bookkeeping & Accounts Retainer',
-          title: 'Accounting & Bookkeeping Retainer',
-          basePrice: 999,
-          isMonthly: true,
-          items: [
-            'Sales, Purchases & Bank Ledger Entries',
-            'Monthly Bank Reconciliation (BRS)',
-            'Profit & Loss Statement & Balance Sheet Preparation',
-            'Debtors & Creditors Ageing Analysis'
-          ]
-        },
-        'gst-pack': {
-          tag: 'Indirect Tax Retainer',
-          title: 'GST Monthly Return Filing',
-          basePrice: 499,
-          isMonthly: true,
-          items: [
-            'Monthly/Quarterly GSTR-1 & GSTR-3B Filings',
-            'Automated GSTR-2B Input Tax Credit (ITC) Reconciliation',
-            'Input Tax Optimization to prevent audit notices',
-            'Challan generation & ledger management'
-          ]
-        },
-        'dsc-quick': {
-          tag: 'Class 3 Express 15-Min',
-          title: 'Class 3 DSC (Sign + Encrypt / Universal)',
-          basePrice: 1599,
-          isMonthly: false,
-          items: [
-            '15-Minute Paperless Aadhaar OTP / Video KYC',
-            '2-Year Validity Signing + Encryption Dual Certificate',
-            'FIPS Certified Cryptographic USB Token Included',
-            'Compatible with e-Procurement, GeM, MCA V3, ICEGATE, GST & EPFO'
-          ]
-        }
-      };
-
-      let selectedPlan = 'retainer';
-
-      function setBasePlan(planKey) {
-        selectedPlan = planKey;
-        document.querySelectorAll('.plan-btn').forEach(btn => {
-          btn.classList.remove('border-emerald-500', 'bg-emerald-950/40', 'text-emerald-300');
-          btn.classList.add('border-slate-700', 'bg-slate-800', 'text-slate-300');
-        });
-
-        const chosenBtn = document.getElementById('plan-' + planKey);
-        if (chosenBtn) {
-          chosenBtn.classList.remove('border-slate-700', 'bg-slate-800', 'text-slate-300');
-          chosenBtn.classList.add('border-emerald-500', 'bg-emerald-950/40', 'text-emerald-300');
-        }
-
-        recalculateTotal();
-      }
-
-      function recalculateTotal() {
-        const plan = plansData[selectedPlan];
-        let total = plan.basePrice;
-        let deliverables = [...plan.items];
-
-        const addGst = document.getElementById('add-gst-check').checked;
-        const addAccounting = document.getElementById('add-accounting-check').checked;
-        const addDsc = document.getElementById('add-dsc-check').checked;
-        const addXbrl = document.getElementById('add-xbrl-check').checked;
-
-        if (addGst && selectedPlan !== 'gst-pack') {
-          total += 499;
-          deliverables.push('Add-on: Monthly GST Return Filing (+₹499 / mo)');
-        }
-        if (addAccounting && selectedPlan !== 'accounting') {
-          total += 999;
-          deliverables.push('Add-on: Monthly Accounting & Bookkeeping (+₹999 / mo)');
-        }
-        if (addDsc && selectedPlan !== 'dsc-quick') {
-          total += 1599;
-          deliverables.push('Add-on: Class 3 Universal DSC Token (+₹1,599 / 2 yrs)');
-        }
-        if (addXbrl) {
-          total += 4999;
-          deliverables.push('Add-on: MCA AOC-4 XBRL Financial Tagging (+₹4,999)');
-        }
-
-        document.getElementById('est-tag').textContent = plan.tag;
-        document.getElementById('est-heading').textContent = plan.title;
-
-        const priceSuffix = plan.isMonthly ? ' /mo' : '';
-        document.getElementById('est-total').innerHTML = `₹${total.toLocaleString('en-IN')}<span class="text-xs font-normal text-slate-300">${priceSuffix}</span>`;
-
-        const listContainer = document.getElementById('est-items-list');
-        listContainer.innerHTML = '';
-        deliverables.forEach(item => {
-          const row = document.createElement('div');
-          row.className = 'flex items-start gap-2 text-slate-200';
-          row.innerHTML = `<i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i> <span>${item}</span>`;
-          listContainer.appendChild(row);
-        });
-
-        const waBtn = document.getElementById('est-whatsapp-action');
-        const message = encodeURIComponent(`Hello AdviseDesk, I generated an estimate for "${plan.title}" (Estimated: ₹${total.toLocaleString('en-IN')}${priceSuffix}). Please guide me on next steps.`);
-        waBtn.href = `https://wa.me/918767930751?text=${message}`;
-
-        lucide.createIcons();
-      }
-
-      // Contact Form Submission
-      function handleContactSubmit(e) {
-        e.preventDefault();
-        const name = document.getElementById('custName').value.trim();
-        const phone = document.getElementById('custPhone').value.trim();
-        const service = document.getElementById('custService').value;
-        const email = document.getElementById('custEmail').value.trim() || 'Not specified';
-        const note = document.getElementById('custNote').value.trim() || 'Direct Inquiry';
-
-        const waMsg = encodeURIComponent(
-          `*New Website Inquiry - Advise Desk*\n` +
-          `*Client:* ${name}\n` +
-          `*Phone:* ${phone}\n` +
-          `*Email:* ${email}\n` +
-          `*Service:* ${service}\n` +
-          `*Notes:* ${note}`
-        );
-
-        window.open(`https://wa.me/918767930751?text=${waMsg}`, '_blank');
-      }
-
-      // Initialize on load
-      document.addEventListener('DOMContentLoaded', () => {
-        filterCalendar();
-        setBasePlan('retainer');
-        lucide.createIcons();
-        document.getElementById('currentYear').textContent = new Date().getFullYear();
+      const grouped = {};
+      data.forEach(item => {
+        if (!grouped[item.month]) grouped[item.month] = [];
+        grouped[item.month].push(item);
       });
-    </script>
-  </body>
-  </html>
+
+      let html = '';
+      for (const [month, items] of Object.entries(grouped)) {
+        html += `
+          <div>
+            <h4 class="text-lg font-bold text-amber-400 mb-3 border-b border-slate-800 pb-2">${month}</h4>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left border-collapse text-xs">
+                <thead>
+                  <tr class="text-slate-400 border-b border-slate-800">
+                    <th class="py-2.5 px-3 font-semibold">DUE DATE</th>
+                    <th class="py-2.5 px-3 font-semibold">ACT</th>
+                    <th class="py-2.5 px-3 font-semibold">COMPLIANCE</th>
+                    <th class="py-2.5 px-3 font-semibold">WHO IT APPLIES TO</th>
+                    <th class="py-2.5 px-3 font-semibold text-right">ACTION</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800/60">
+        `;
+
+        items.forEach(i => {
+          let badgeColor = 'bg-blue-500/10 text-blue-400 border-blue-500/30';
+          if (i.act === 'GST') badgeColor = 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30';
+          if (i.act.includes('Companies') || i.act.includes('LLP')) badgeColor = 'bg-purple-500/10 text-purple-400 border-purple-500/30';
+          if (i.act.includes('Professional')) badgeColor = 'bg-rose-500/10 text-rose-400 border-rose-500/30';
+
+          html += `
+            <tr class="hover:bg-slate-800/30 transition-colors">
+              <td class="py-3 px-3 font-bold text-white whitespace-nowrap">${i.date}</td>
+              <td class="py-3 px-3"><span class="px-2.5 py-1 rounded-full border text-[10px] font-semibold ${badgeColor}">${i.act}</span></td>
+              <td class="py-3 px-3 text-slate-200 font-medium">${i.compliance}</td>
+              <td class="py-3 px-3 text-slate-400">${i.applies}</td>
+              <td class="py-3 px-3 text-right">
+                <a href="https://wa.me/918767930751?text=Hi%2C%20I%20want%20help%20filing%20for%20${encodeURIComponent(i.compliance)}%20due%20on%20${i.date}" target="_blank" class="px-2.5 py-1 rounded bg-emerald-600/20 text-emerald-400 hover:bg-emerald-600 hover:text-white font-bold text-[10px] transition-all">
+                  <i class="fa-brands fa-whatsapp"></i> File
+                </a>
+              </td>
+            </tr>
+          `;
+        });
+
+        html += `</tbody></table></div></div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function filterCalendar() {
+      const monthVal = document.getElementById('filterMonth').value;
+      const actVal = document.getElementById('filterAct').value;
+
+      let filtered = complianceData;
+      if (monthVal !== 'all') {
+        filtered = filtered.filter(i => i.month === monthVal);
+      }
+      if (actVal !== 'all') {
+        filtered = filtered.filter(i => i.act === actVal);
+      }
+      renderCalendar(filtered);
+    }
+
+    function resetCalendarFilters() {
+      document.getElementById('filterMonth').value = 'all';
+      document.getElementById('filterAct').value = 'all';
+      renderCalendar(complianceData);
+    }
+  </script>
+
+</body>
+</html>
